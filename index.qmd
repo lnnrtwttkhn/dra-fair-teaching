@@ -49,6 +49,12 @@ format:
 taken from this [Quarto demo presentation](https://quarto.org/docs/presentations/revealjs/demo/) ([Source](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd))
 :::
 
+## Reproducibility
+
+*"[...] when the same analysis steps performed on the same dataset [...] produce the same answer."* ([Turing Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions))
+
+![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width=50% fig-align="center"}
+
 ## Why we need version control ...
 
 :::: {.columns}
