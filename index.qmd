@@ -115,5 +115,18 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 ![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3695300/files/FirstPullRequest.jpg?download=1)](https://zenodo.org/record/3695300/files/FirstPullRequest.jpg?download=1){width=84% fig-align="center"}
 :::
 ::::
-
 :::::
+
+## Integration with zenodo.org
+
+> To make your repositories easier to reference in academic literature, you can create persistent identifiers, also known as Digital Object Identifiers (DOIs).
+You can use the data archiving tool Zenodo to archive a repository on GitHub.com and issue a DOI for the archive.
+
+
+1. Navigate to the [login page](https://zenodo.org/login) for Zenodo.
+2. Click **Log in with GitHub**.
+3. Review the information about access permissions, then click **Authorize zenodo**.
+4. Navigate to the [Zenodo GitHub page](https://zenodo.org/account/settings/github/).
+5. To the right of the name of the repository you want to archive, toggle the button to **On**.
+
+Details in the [GitHub Docs](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
