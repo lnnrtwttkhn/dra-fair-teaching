@@ -117,6 +117,14 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 ::::
 :::::
 
+## What are the benefits of Git for teaching?
+
+## Continous Deployment via GitHub Actions
+
+## Reusability
+
+## Project Management on GitHub
+
 ## Integration with zenodo.org
 
 > To make your repositories easier to reference in academic literature, you can create persistent identifiers, also known as Digital Object Identifiers (DOIs).
