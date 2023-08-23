@@ -24,6 +24,9 @@ authors:
     attributes:
       corresponding: boolean
       equal-contributor: true
+date: "2023-08-29"
+date-format: long
+from: markdown+emoji
 format: revealjs
 ---
 
