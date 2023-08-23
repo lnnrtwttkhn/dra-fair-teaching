@@ -24,7 +24,9 @@ authors:
     attributes:
       corresponding: boolean
       equal-contributor: true
-format: revealjs
+format:
+  revealjs:
+    theme: [default, custom.scss]
 ---
 
 ## Getting up
@@ -36,3 +38,76 @@ format: revealjs
 
 - Get in bed
 - Count sheep
+
+## Features of Quarto Presentations
+
+```{=html}
+<iframe width="100%" height="80%" src="https://quarto.org/docs/presentations/revealjs/demo/" title="Quarto Revealjs Demo"></iframe>
+```
+
+::: footer
+taken from this [Quarto demo presentation](https://quarto.org/docs/presentations/revealjs/demo/) ([Source](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd))
+:::
+
+## Why we need version control ...
+
+:::: {.columns}
+::: {.column width="42%"}
+::: {.fragment}
+... for **code** (text files)
+![[&copy; Jorge Cham (phdcomics.com)](http://phdcomics.com/comics/archive/phd101212s.gif)](http://phdcomics.com/comics/archive/phd101212s.gif)
+:::
+:::
+::: {.column width="58%"}
+::: {.fragment}
+... for **data** (binary files)
+![[&copy; Jorge Cham (phdcomics.com)](http://phdcomics.com/comics/archive/phd052810s.gif)](http://phdcomics.com/comics/archive/phd052810s.gif)
+:::
+:::
+::::
+
+::: {.notes}
+- Version control is relevant for anyone who wants to track the evolution of digital objects
+:::
+
+## What is version control?
+
+::: {.fragment}
+*"Version control is a systematic approach to record changes made in a [...] set of files, over time. This allows you and your collaborators to track the history, see what changed, and recall specific versions later [...]"* ([Turing Way](https://the-turing-way.netlify.app/reproducible-research/vcs.html))
+:::
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+::: {.fragment}
+{{< fa laptop-code >}} keep track of changes in a directory (a "repository")
+
+{{< fa code-commit >}} take snapshots ("commits") of your repo at any time
+
+{{< fa timeline >}} know the history: what was changed when by whom
+
+{{< fa code-compare >}} compare commits and go back to any previous state
+
+{{< fa code-pull-request >}} work on parallel "branches" & flexibly "merge" them
+
+![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3695300/files/VersionControl.jpg?download=1)](https://zenodo.org/record/3695300/files/VersionControl.jpg?download=1){width=80% fig-align="center"}
+:::
+::::
+
+:::: {.column width="50%"}
+::: {.fragment}
+{{< fa upload >}} "push" your repo to a "remote" location & share it
+
+{{< fa brands github >}} {{< fa brands gitlab >}} share repos on platforms like GitHub or GitLab
+
+{{< fa people-group >}} work together on the same files at the same time
+
+{{< fa pen-to-square >}} others can read, copy, edit and suggest changes
+
+{{< fa box-open >}} make your repo public and openly share your work
+
+![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3695300/files/FirstPullRequest.jpg?download=1)](https://zenodo.org/record/3695300/files/FirstPullRequest.jpg?download=1){width=84% fig-align="center"}
+:::
+::::
+
+:::::
