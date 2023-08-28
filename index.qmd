@@ -122,6 +122,15 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 
 ## What are the benefits of Git for teaching?
 
+### Project Management
+
+- Discuss and plan your teaching preparation in [issues](https://github.com/features/issues)
+- Propose changes to the teaching materials using [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) ^[*pull* requests on GitHub, *merge* requests on GitLab]
+- Create a [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of someone else's repository and extend their teaching materials
+- Manage access to your code and data with detailed [permissions and roles](https://docs.gitlab.com/ee/user/permissions.html)
+- Add documentation to your repository or in a separate [wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
+- Access to more features and tools, e.g., via [GitHub Campus Global](https://education.github.com/)
+
 ## Continous Deployment via GitHub Actions
 
 ## Reusability
