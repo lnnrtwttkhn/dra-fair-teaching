@@ -50,7 +50,6 @@ TBA
 #### Which tool is useful to measure if those competencies have been learned?
 
 TBA
-:::
 
 ::: {.fragment}
 #### Final objectives
