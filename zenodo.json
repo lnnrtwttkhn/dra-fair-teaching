@@ -1,0 +1,31 @@
+{
+    "creators": [
+        {
+            "orcid": "0000-0003-3625-1357",
+            "affiliation": "Delft University of Technology",
+            "name": "Plomp, Esther"
+        },
+        {
+            "orcid": "0000-0003-2966-6888",
+            "affiliation": "University of Hamburg",
+            "name": "Wittkuhn, Lennart"
+    ],
+
+    "license": "cc-by-4.0",
+
+    "title": "Reproducible and FAIR Teaching Materials",
+
+    "keywords": [
+      "FAIR",
+      "Reproducibility"
+      "Version Control",
+      "Git",
+      "GitHub",
+      "Quarto",
+      "Zenodo"
+      "Open Science",
+      "Education",
+      "Teaching"
+    ],
+
+}
