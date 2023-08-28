@@ -71,6 +71,8 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 
 ![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width=50% fig-align="center"}
 
+# Working on teaching materials *collaboratively*
+
 ## Why we need version control ...
 
 :::: {.columns}
@@ -85,11 +87,18 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 ... for **data** (binary files)
 ![[&copy; Jorge Cham (phdcomics.com)](http://phdcomics.com/comics/archive/phd052810s.gif)](http://phdcomics.com/comics/archive/phd052810s.gif)
 :::
+::: {.fragment}
+**When everything is relevant ...**
+:::
+::: {.fragment}
+**... track everything.**
+:::
 :::
 ::::
 
 ::: {.notes}
 - Version control is relevant for anyone who wants to track the evolution of digital objects
+- Credit: Adapted from [Slides on "Research Data Management with DataLad"](http://datasets.datalad.org/datalad/datalad-course/html/mpsc-introduction.html#/5) by Adina Wagner & Michael Hanke]
 :::
 
 ## What is version control?
