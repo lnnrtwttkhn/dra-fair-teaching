@@ -1,0 +1,35 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Reproducible and FAIR Teaching Materials
+message: >-
+  If you use this software, please cite it using these
+  metadata.
+type: software
+authors:
+  - family-names: Plomp
+    given-names: Esther
+    orcid: '0000-0003-3625-1357'
+  - family-names: Wittkuhn
+    given-names: Lennart
+    orcid: 'https://orcid.org/0000-0003-2966-6888'
+repository-code: 'https://github.com/lnnrtwttkhn/dra-fair-teaching'
+url: >-
+  https://lennartwittkuhn.com/dra-fair-teaching
+keywords:
+  - FAIR
+  - Reproducibility
+  - Version Control
+  - Git
+  - GitHub
+  - Quarto
+  - Zenodo
+  - Open Science
+  - Education
+  - Teaching
+  - Digital Research Academy
+license: CC-BY-4.0
+version: 1.0
+date-released: '2023-08-29'
