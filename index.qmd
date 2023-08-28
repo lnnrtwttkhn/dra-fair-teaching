@@ -27,7 +27,18 @@ authors:
 date: "2023-08-29"
 date-format: long
 from: markdown+emoji
-format: revealjs
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    preview-links: auto
+    transition: none
+    transition-speed: fast
+    slide-number: "c/t"
+    link-external-newwindow: true
+    overview: true
+    menu: true
+    chalkboard: true
+    mutliplex: false
 ---
 
 ## Getting up
