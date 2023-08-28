@@ -41,10 +41,185 @@ format:
     mutliplex: false
 ---
 
-## Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
+## Overview
+
+::: {.fragment}
+
+### Outline
+
+- Definitions (FAIR/Reproducibility)
+- Introduction to tools (Quarto and GitHub)
+- If there is time: Demo?
+
+:::
+
+::: {.fragment}
+
+### Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
 
 - You can share your teaching materials in accordance with FAIR principles
 - You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
+
+:::
+
+## What is FAIR? 
+
+::: columns
+::: {.column width="50%"}
+::: {.fragment}
+
+**Findable**
+
+- Descriptive metadata and persistent identifier
+
+**Accessible**
+
+- Data could be openly available OR authentication and authorisation procedures are necessary
+
+**Interoperable**
+
+- Data needs to be integrated with other data and interoperate with applications or workflows
+
+**Reusable**
+
+- Documentation and license
+
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+
+![[by Scriberia for The Turing Way community (CC-BY
+4.0)](https://zenodo.org/record/3678226/files/FAIRPrinciples.jpg?download=1)](https://zenodo.org/record/3678226/files/FAIRPrinciples.jpg?download=1){width="80%"
+fig-align="center"}
+
+:::
+:::
+:::
+
+# How does FAIR apply to teaching materials? 
+
+Teaching materials can be considered as similar/equal to research outputs.
+FAIR principles also apply! 
+
+## FAIR teaching materials? 
+::: columns
+::: {.column width="42%"}
+::: {.fragment}
+
+#### Findable/Accessible
+
+- Share your slides/materials on a data repository to receive a DOI and ensure long term preservation
+  - [Zenodo](https://zenodo.org/) (indexed, DOI, preservation)
+  - [OSF](https://osf.io/) (DOI?, forkable)
+- Share your materials via a journal article 
+  - [Taking the TU Delft Carpentries Workshops Online](https://doi.org/10.7191/jeslib.2022.1221 (2022))
+- Share your materials in a training material registry
+  - [TesS](https://tess.elixir-europe.org/) (ELIXIR)
+  - [OERcommons](https://oercommons.org/)
+
+:::
+:::
+
+::: {.column width="58%"}
+::: {.fragment}
+
+#### Interoperable
+
+- Use commonly used formats (powerpoint) or open formats such as markdown documents 
+  - Pdf is open but difficult to reuse!
+- Use common terminology
+  - Instructor/Helpers for Carpentry workshops
+- Integrate with other resources where possible 
+  - Citations
+  - Reuse of slides
+
+:::
+
+::: {.fragment}
+
+#### Reusable
+
+- Add documentation
+  - Information sheets
+- Add metadata
+  - learning objectives!, required resources, structure
+- Share under an Open License such as CC-BY
+  - For slides/data: [Creative Commons Licenses](https://creativecommons.org/licenses/) 
+  - For software/code: [Choose a License](https://choosealicense.com/) 
+  
+:::
+:::
+:::
+
+## Ten simple rules for making training materials FAIR
+
+[https://doi.org/10.1371/journal.pcbi.1007854](https://doi.org/10.1371/journal.pcbi.1007854)
+
+![[Illustration for paper "Ten simple rules for making training materials FAIR" (CC-BY
+4.0)](https://zenodo.org/record/3593258/files/10%20simple%20rules%20for%20making%20training%20materials%20FAIR.jpg?download=1)](https://zenodo.org/record/3593258/files/10%20simple%20rules%20for%20making%20training%20materials%20FAIR.jpg?download=1){width="50%"
+fig-align="center"}
+
+# "Reproducible and FAIR Teaching Materials"
+
+## What is Reproducibility?
+
+*"\[...\] when the same analysis steps performed on the same dataset
+\[...\] produce the same answer."* ([Turing
+Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions))
+
+![[by Scriberia for The Turing Way community (CC-BY
+4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width="50%"
+fig-align="center"}
+
+## How does reproducbility apply to teaching materials? 
+
+Comes close to the Interoperability and Reusable principles: 
+
+- Integrating materials
+- Formatting
+- Software/code
+- Similar learning goals/objectives and outcomes
+
+::: fragment
+
+**Practice what you preach!**
+
+By setting up your teaching materials in a reproducible manner, you demonstrate the value of reproducibility directly
+
+:::
+
+## FAIR and reproducible training materials are beneficial to you! 
+
+::: columns
+::: {.column width="50%"}
+::: {.fragment}
+
+- Information sheets saves time in sharing information
+- Clear communication (or you can update the information!)
+- Saves time in on-boarding/re-using materials
+- Preserved & Findable
+- Easy to share within and outside your team
+- Provides you and collaborators with credit (visibility, DOI, citations)
+
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+
+![[by Scriberia for The Turing Way community (CC-BY
+4.0)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1){width="80%"
+fig-align="center"}
+:::
+:::
+:::
+
+
+# Questions about FAIR/Reproducible?
+
+# Break
 
 # What is Quarto?
 
