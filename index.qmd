@@ -41,64 +41,74 @@ format:
     mutliplex: false
 ---
 
-## Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
+## Overview
+
+::: {.fragment}
+
+### Outline
+
+- Definitions (FAIR/Reproducibility)
+- Introduction to tools (Quarto and GitHub)
+- If there is time: Demo?
+
+:::
+
+::: {.fragment}
+
+### Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
 
 - You can share your teaching materials in accordance with FAIR principles
 - You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
 
-## Outline
+:::
 
--   Definitions (FAIR/Reproducibility)
--   Introduction to tools (Quarto and GitHub)
--   If there is time: Demo?
-
-
-# What is FAIR? 
+## What is FAIR? 
 
 ::: columns
 ::: {.column width="50%"}
-::: fragment
+::: {.fragment}
 
 **Findable**
 
-* Descriptive metadata and persistent identifier
+- Descriptive metadata and persistent identifier
 
 **Accessible**
 
-* Data could be openly available OR authentication and authorisationprocedures are necessary
+- Data could be openly available OR authentication and authorisation procedures are necessary
 
 **Interoperable**
 
-* Data needs to be integrated with other data and interoperate with applications or workflows
+- Data needs to be integrated with other data and interoperate with applications or workflows
 
 **Reusable**
 
-* Documentation and license
-
+- Documentation and license
 
 :::
 :::
 
 ::: {.column width="50%"}
-::: fragment
+::: {.fragment}
 
 ![[by Scriberia for The Turing Way community (CC-BY
 4.0)](https://zenodo.org/record/3678226/files/FAIRPrinciples.jpg?download=1)](https://zenodo.org/record/3678226/files/FAIRPrinciples.jpg?download=1){width="80%"
 fig-align="center"}
+
 :::
 :::
 :::
 
 # How does FAIR apply to teaching materials? 
 
-Teaching materials can be considered as similar/equal to research outputs. FAIR principles also apply! 
+Teaching materials can be considered as similar/equal to research outputs.
+FAIR principles also apply! 
 
-# FAIR teaching materials? 
+## FAIR teaching materials? 
 ::: columns
 ::: {.column width="42%"}
-::: fragment
+::: {.fragment}
 
-**Findable/Accessible**
+#### Findable/Accessible
 
 - Share your slides/materials on a data repository to receive a DOI and ensure long term preservation
   - [Zenodo](https://zenodo.org/) (indexed, DOI, preservation)
@@ -113,9 +123,9 @@ Teaching materials can be considered as similar/equal to research outputs. FAIR 
 :::
 
 ::: {.column width="58%"}
-::: fragment
+::: {.fragment}
 
-**Interoperable**
+#### Interoperable
 
 - Use commonly used formats (powerpoint) or open formats such as markdown documents 
   - Pdf is open but difficult to reuse!
@@ -127,9 +137,9 @@ Teaching materials can be considered as similar/equal to research outputs. FAIR 
 
 :::
 
-::: fragment
+::: {.fragment}
 
-**Reusable**
+#### Reusable
 
 - Add documentation
   - Information sheets
@@ -143,8 +153,7 @@ Teaching materials can be considered as similar/equal to research outputs. FAIR 
 :::
 :::
 
-
-# Ten simple rules for making training materials FAIR
+## Ten simple rules for making training materials FAIR
 
 [https://doi.org/10.1371/journal.pcbi.1007854](https://doi.org/10.1371/journal.pcbi.1007854)
 
@@ -164,7 +173,7 @@ Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-
 4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width="50%"
 fig-align="center"}
 
-# How does reproducbility apply to teaching materials? 
+## How does reproducbility apply to teaching materials? 
 
 Comes close to the Interoperability and Reusable principles: 
 
@@ -181,12 +190,11 @@ By setting up your teaching materials in a reproducible manner, you demonstrate 
 
 :::
 
-
-# FAIR and reproducible training materials are beneficial to you! 
+## FAIR and reproducible training materials are beneficial to you! 
 
 ::: columns
 ::: {.column width="50%"}
-::: fragment
+::: {.fragment}
 
 - Information sheets saves time in sharing information
 - Clear communication (or you can update the information!)
@@ -199,7 +207,7 @@ By setting up your teaching materials in a reproducible manner, you demonstrate 
 :::
 
 ::: {.column width="50%"}
-::: fragment
+::: {.fragment}
 
 ![[by Scriberia for The Turing Way community (CC-BY
 4.0)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1){width="80%"
@@ -212,7 +220,6 @@ fig-align="center"}
 # Questions about FAIR/Reproducible?
 
 # Break
-
 
 # What is Quarto?
 
