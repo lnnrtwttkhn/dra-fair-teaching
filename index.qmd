@@ -222,7 +222,9 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 - CERN, the European Organization for Nuclear Research, is one of the world's largest and most respected centres for scientific research.
 :::
 
-## Thank you!
+::: {.notes}
+- Demonstration: We are now going to add a DOI to this presentation.
+:::
 ## Thank you! :pray:
 
 :::: {.columns}
