@@ -180,6 +180,14 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 - Archiving on GitHub is not enough
 :::
 
+## Example: Collaborative workflow with issues and pull requests
+
+{{< fa brands internet-explorer >}} [github.com/lnnrtwttkhn/dra-fair-teaching/issues/1](https://github.com/lnnrtwttkhn/dra-fair-teaching/issues/1)
+
+```{=html}
+<iframe width="100%" height="80%" src="https://github.com/lnnrtwttkhn/dra-fair-teaching/issues/1" title="Course Website"></iframe>
+```
+
 # Example: Research Data Management 101 Course at TU Delft Library (TNW RDM 101)
 
 ## Course Manual (Example of a [Quarto Book](https://quarto.org/docs/websites/))
