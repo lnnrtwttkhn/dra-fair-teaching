@@ -58,7 +58,7 @@ format:
 ### Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
 
 - You can share your teaching materials in accordance with FAIR principles
-- You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
+- You can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)
 
 :::
 
@@ -246,12 +246,6 @@ fig-align="center"}
 taken from this [Quarto demo presentation](https://quarto.org/docs/presentations/revealjs/demo/) ([Source](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd))
 :::
 
-## Reproducibility
-
-*"[...] when the same analysis steps performed on the same dataset [...] produce the same answer."* ([Turing Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions))
-
-![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width=50% fig-align="center"}
-
 # Working on teaching materials *collaboratively*
 
 ## Why we need version control ...
@@ -352,7 +346,7 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 **Note**
 
 - {{< fa brands github >}} The dominance of GitHub (a for-profit company owned by Microsoft) is not uncontested (see [#GiveUpGitHub](https://sfconservancy.org/GiveUpGitHub/))
-- {{< fa boxes-packing >}} A project on GitHub is not a FAIR archiving of scholarly outputs (see later slide on how to archive on Zenodo)
+- {{< fa boxes-packing >}} A project on GitHub is not a FAIR archiving of scholarly outputs (see previous and following slides)
 :::
 
 ::: {.notes}
@@ -479,6 +473,7 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 :::
 
 ::: {.column width="40%"}
+{{< fa image >}} **Images:** [Scriberia with The Turing Way community](https://doi.org/10.5281/zenodo.3332807) (License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 
 :computer: **Slides:** Slides are publicly available at [lennartwittkuhn.com/dra-fair-teaching](https://lennartwittkuhn.com/ddlitlab-presentation/)
 
