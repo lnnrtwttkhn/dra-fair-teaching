@@ -41,7 +41,6 @@ format: revealjs
 
 
 ::: {.fragment}
-#### How can learners achoieve those comptencies best?
 
 :::
 
