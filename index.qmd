@@ -41,14 +41,10 @@ format:
     mutliplex: false
 ---
 
-## Getting up
-
-::: {.fragment}
-#### Final objectives
+## Learning objectives
 
 - You can share your teaching materials in accordance with FAIR principles
 - You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
-:::
 
 # What is Quarto?
 
