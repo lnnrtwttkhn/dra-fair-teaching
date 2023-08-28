@@ -44,22 +44,284 @@ format:
 ## Learning goals ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
 
 ::: {.fragment}
-#### Which are the most important competencies?
 
-- How to share teaching materials in accordance with FAIR principles
-- Understand how FAIR principles relate to teaching materials
-:::
-
-
-::: {.fragment}
-
-:::
-
-
-
-::: {.fragment}
 #### Final objectives
 
 - You can share your teaching materials in accordance with FAIR principles
 - You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
 :::
+
+# What is Quarto?
+
+## About Quarto
+
+::: {.incremental}
+- Quarto is a new, open-source, scientific and technical publishing system
+- It aims to make the process of creating and collaborating dramatically better
+- Consistent implementation of features across outputs: tabsets, code-folding, syntax highlighting, etc.
+- Helpful guardrails for new learners: YAML completion, informative syntax errors, etc.
+- Support for R, Python, Julia, Observable and more functions via Jupyter
+:::
+
+![[Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_3840.png?h=783eba914284e5adfb9feadcf4ba5f1e){width=50%}
+
+## Features of Quarto presentations
+
+```{=html}
+<iframe width="100%" height="80%" src="https://quarto.org/docs/presentations/revealjs/demo/" title="Quarto Revealjs Demo"></iframe>
+```
+
+::: footer
+taken from this [Quarto demo presentation](https://quarto.org/docs/presentations/revealjs/demo/) ([Source](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd))
+:::
+
+## Reproducibility
+
+*"[...] when the same analysis steps performed on the same dataset [...] produce the same answer."* ([Turing Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions))
+
+![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width=50% fig-align="center"}
+
+# Working on teaching materials *collaboratively*
+
+## Why we need version control ...
+
+:::: {.columns}
+::: {.column width="42%"}
+::: {.fragment}
+... for **code** (text files)
+![[&copy; Jorge Cham (phdcomics.com)](http://phdcomics.com/comics/archive/phd101212s.gif)](http://phdcomics.com/comics/archive/phd101212s.gif)
+:::
+:::
+::: {.column width="58%"}
+::: {.fragment}
+... for **data** (binary files)
+![[&copy; Jorge Cham (phdcomics.com)](http://phdcomics.com/comics/archive/phd052810s.gif)](http://phdcomics.com/comics/archive/phd052810s.gif)
+:::
+::: {.fragment}
+**When everything is relevant ...**
+:::
+::: {.fragment}
+**... track everything.**
+:::
+:::
+::::
+
+::: {.notes}
+- Version control is relevant for anyone who wants to track the evolution of digital objects
+- Credit: Adapted from [Slides on "Research Data Management with DataLad"](http://datasets.datalad.org/datalad/datalad-course/html/mpsc-introduction.html#/5) by Adina Wagner & Michael Hanke]
+:::
+
+## What is version control?
+
+::: {.fragment}
+*"Version control is a systematic approach to record changes made in a [...] set of files, over time. This allows you and your collaborators to track the history, see what changed, and recall specific versions later [...]"* ([Turing Way](https://the-turing-way.netlify.app/reproducible-research/vcs.html))
+:::
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+::: {.fragment}
+{{< fa laptop-code >}} keep track of changes in a directory (a "repository")
+
+{{< fa code-commit >}} take snapshots ("commits") of your repo at any time
+
+{{< fa timeline >}} know the history: what was changed when by whom
+
+{{< fa code-compare >}} compare commits and go back to any previous state
+
+{{< fa code-pull-request >}} work on parallel "branches" & flexibly "merge" them
+
+![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3695300/files/VersionControl.jpg?download=1)](https://zenodo.org/record/3695300/files/VersionControl.jpg?download=1){width=80% fig-align="center"}
+:::
+::::
+
+:::: {.column width="50%"}
+::: {.fragment}
+{{< fa upload >}} "push" your repo to a "remote" location & share it
+
+{{< fa brands github >}} {{< fa brands gitlab >}} share repos on platforms like GitHub or GitLab
+
+{{< fa people-group >}} work together on the same files at the same time
+
+{{< fa pen-to-square >}} others can read, copy, edit and suggest changes
+
+{{< fa box-open >}} make your repo public and openly share your work
+
+![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3695300/files/FirstPullRequest.jpg?download=1)](https://zenodo.org/record/3695300/files/FirstPullRequest.jpg?download=1){width=84% fig-align="center"}
+:::
+::::
+:::::
+
+## Example: the GitHub repository for these slides
+
+{{< fa brands internet-explorer >}} [github.com/lnnrtwttkhn/dra-fair-teaching](https://github.com/lnnrtwttkhn/dra-fair-teaching)
+
+```{=html}
+<iframe width="100%" height="74%" src="https://github.com/lnnrtwttkhn/dra-fair-teaching" title="DRA FAIR Teaching repository"></iframe>
+```
+
+::: {.notes}
+- Practice what you preach
+- Leading by example
+:::
+
+## More benefits of Git(Hub) for (teaching) project management
+
+::: {.incremental}
+- {{< fa bug >}} Discuss and plan your teaching preparation in [issues](https://github.com/features/issues) (even just with your future / past self)
+- {{< fa comments >}}  Ask questions, share ideas and discuss with your community via [GitHub Discussions](https://github.com/features/discussions)
+- {{< fa code-pull-request >}} Propose changes to the teaching materials using [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) ^[*pull* requests on GitHub, *merge* requests on GitLab]
+- {{< fa code-fork >}} Create a [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of someone else's repository and extend their teaching materials
+- {{< fa key >}} Manage access to your teaching materials with detailed [permissions and roles](https://docs.gitlab.com/ee/user/permissions.html)
+- {{< fa book-medical >}} Add documentation to your repository or in a separate [wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
+- {{< fa graduation-cap >}} Access to more features and tools for teaching via [GitHub Campus Global](https://education.github.com/)
+:::
+
+::: {.fragment}
+**Note**
+
+- {{< fa brands github >}} The dominance of GitHub (a for-profit company owned by Microsoft) is not uncontested (see [#GiveUpGitHub](https://sfconservancy.org/GiveUpGitHub/))
+- {{< fa boxes-packing >}} A project on GitHub is not a FAIR archiving of scholarly outputs (see later slide on how to archive on Zenodo)
+:::
+
+::: {.notes}
+- GitHub Copilot is a for-profit AI product trained with projects that were hosted on GitHub, including many that have licenses that require proper author attribution etc.
+- GitHub has a for-profit software services contract with the USA Immigration and Customs Enforcement (ICE)
+- Archiving on GitHub is not enough
+:::
+
+## Example: Collaborative workflow with issues and pull requests
+
+{{< fa brands internet-explorer >}} [github.com/lnnrtwttkhn/dra-fair-teaching/issues/1](https://github.com/lnnrtwttkhn/dra-fair-teaching/issues/1)
+
+```{=html}
+<iframe width="100%" height="80%" src="https://github.com/lnnrtwttkhn/dra-fair-teaching/issues/1" title="Course Website"></iframe>
+```
+
+# Example: Research Data Management 101 Course at TU Delft Library (TNW RDM 101)
+
+## Course Manual (Example of a [Quarto Book](https://quarto.org/docs/websites/))
+
+**Summary:** This course provides PhD candidates with the essential knowledge and the core skills to manage research data according to best practice.
+
+{{< fa desktop >}} [estherplomp.github.io/TNW-RDM-101](https://estherplomp.github.io/TNW-RDM-101/)
+
+```{=html}
+<iframe width="100%" height="74%" src="https://estherplomp.github.io/TNW-RDM-101/" title="Course Website"></iframe>
+```
+
+# Example: Course on "Version Control of Code & Data" at the University of Hamburg
+
+## Course Website (Example of a [Quarto Website](https://quarto.org/docs/websites/))
+
+**Summary:** A hands-on seminar about version control of code and data using Git with curated online materials, interactive discussions, quizzes and exercises, targeted at (aspiring) researchers in Psychology & Neuroscience.
+
+{{< fa desktop >}} [lennartwittkuhn.com/version-control-course-uhh-ws23](https://lennartwittkuhn.com/version-control-course-uhh-ws23/)
+```{=html}
+<iframe width="100%" height="74%" src="https://lennartwittkuhn.com/version-control-course-uhh-ws23/" title="Course Website"></iframe>
+```
+
+::: {.notes}
+- Course website is the main entry point for students before, during and after the course
+- Contents: Overview, course details, schedule, information about the team, additional resources and course mechaniscs
+- Practical advantage: Update course information independently from university websites that are out of your control
+:::
+
+## Version Control Book (Example for a [Quarto Book](https://quarto.org/docs/books/))
+
+{{< fa desktop >}} [lennartwittkuhn.com/version-control-book](https://lennartwittkuhn.com/version-control-book)
+
+```{=html}
+<iframe width="100%" height="80%" src="https://lennartwittkuhn.com/version-control-book" title="Version Control Book"></iframe>
+```
+
+## Create a DOI for your teaching materials with [Zenodo](https://zenodo.org/)
+
+::::: {.fragment}
+:::: {.columns}
+::: {.column width="75%"}
+> "*Zenodo, a CERN service, is an open dependable home for the long-tail of science, enabling researchers to share and preserve any research outputs in any size, any format and from any science.*" -- from the [Zenodo GitHub README](https://github.com/zenodo/zenodo)
+:::
+::: {.column width="25%"}
+![[Zenodo Logo (CC0 license)](https://about.zenodo.org/)](https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg){height=20% fig-align="left"}
+:::
+::::
+:::::
+
+::: {.fragment}
+#### Integrate your teaching materials on GitHub with Zenodo
+
+> "*To **make your repositories easier to reference in academic literature**, you can create persistent identifiers, also known as Digital Object Identifiers (DOIs).
+You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a repository on [GitHub.com](https://github.com/) and issue a DOI for the archive.*"
+-- Details in the [GitHub documentation](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+:::
+
+::::: {.fragment}
+:::: {.columns}
+::: {.column width="45%"}
+1. Navigate to the [login page](https://zenodo.org/login) for Zenodo.
+2. Click **Log in with GitHub**.
+3. Review the information about access permissions, then click **Authorize zenodo**.
+4. Navigate to the [Zenodo GitHub page](https://zenodo.org/account/settings/github/).
+5. To the right of the name of the repository you want to archive, toggle the button to **On**.
+:::
+::: {.column width="55%"}
+![["Making your project citable" by CodeRefinery (CC BY 4.0))](https://coderefinery.github.io/github-without-command-line/doi/)](https://coderefinery.github.io/github-without-command-line/_images/zenodo.png
+){fig-align="left"}
+:::
+::::
+:::::
+
+::: {.notes}
+- CERN, the European Organization for Nuclear Research, is one of the world's largest and most respected centres for scientific research.
+:::
+
+::: {.notes}
+- Demonstration: We are now going to add a DOI to this presentation.
+:::
+## Thank you! :pray:
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](https://avatars.githubusercontent.com/u/46314469?v=4)
+
+#### Esther Plomp
+
+{{< fa envelope >}} [e.plomp@tudelft.nl](mailto:e.plomp@tudelft.nl)<br>
+{{< fa home-user >}} [estherplomp.github.io](https://estherplomp.github.io/)<br>
+{{< fa brands github >}} [GitHub](https://github.com/EstherPlomp)<br>
+{{< fa brands mastodon >}} [Mastodon](https://scholar.social/@toothFAIRy)
+
+:::
+
+::: {.column width="30%"}
+![](https://avatars.githubusercontent.com/u/42233065?v=4)
+
+#### Lennart Wittkuhn
+
+{{< fa envelope >}} [lennart.wittkuhn@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)<br>
+{{< fa home-user >}} [lennartwittkuhn.com](https://lennartwittkuhn.com/)<br>
+{{< fa brands github >}} [GitHub](https://github.com/lnnrtwttkhn)<br>
+{{< fa brands mastodon >}} [Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
+:::
+
+::: {.column width="40%"}
+
+:computer: **Slides:** Slides are publicly available at [lennartwittkuhn.com/dra-fair-teaching](https://lennartwittkuhn.com/ddlitlab-presentation/)
+
+:package: **Software:** Reproducible slides build with [Quarto](https://quarto.org/) and deployed to [GitHub Pages](https://pages.github.com/) using [GitHub Actions](https://github.com/features/actions) (details in the [Quarto docs](https://quarto.org/docs/publishing/github-pages.html))
+
+{{< fa brands github >}} **Source:** Source code is available at [github.com/lnnrtwttkhn/dra-fair-teaching](https://github.com/lnnrtwttkhn/dra-fair-teaching)
+
+:trackball: **DOI:** TBA (generated using GitHub + [Zenodo](https://zenodo.org/), details in the [GitHub docs](https://guides.github.com/activities/citable-code/))
+
+{{< fa scale-balanced >}} **License:** Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+
+:speech_balloon: **Contact:** We welcome any feedback via [email](mailto:lennart.wittkuhn@uni-hamburg.de?cc=e.plomp@tudelft.nl) or [GitHub issues](https://github.com/lnnrtwttkhn/dra-fair-teaching/issues).
+Thank you!
+:::
+
+::::
+
+
