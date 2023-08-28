@@ -58,7 +58,7 @@ format:
 ### Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
 
 - You can share your teaching materials in accordance with FAIR principles
-- You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
+- You can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)
 
 :::
 
@@ -346,7 +346,7 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 **Note**
 
 - {{< fa brands github >}} The dominance of GitHub (a for-profit company owned by Microsoft) is not uncontested (see [#GiveUpGitHub](https://sfconservancy.org/GiveUpGitHub/))
-- {{< fa boxes-packing >}} A project on GitHub is not a FAIR archiving of scholarly outputs (see later slide on how to archive on Zenodo)
+- {{< fa boxes-packing >}} A project on GitHub is not a FAIR archiving of scholarly outputs (see previous and following slides)
 :::
 
 ::: {.notes}
