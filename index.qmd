@@ -45,7 +45,6 @@ format: revealjs
 :::
 
 
-TBA
 
 ::: {.fragment}
 #### Final objectives
