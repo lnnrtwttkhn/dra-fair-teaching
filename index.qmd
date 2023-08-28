@@ -479,6 +479,7 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 :::
 
 ::: {.column width="40%"}
+{{< fa image >}} **Images:** [Scriberia with The Turing Way community](https://doi.org/10.5281/zenodo.3332807) (License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 
 :computer: **Slides:** Slides are publicly available at [lennartwittkuhn.com/dra-fair-teaching](https://lennartwittkuhn.com/ddlitlab-presentation/)
 
