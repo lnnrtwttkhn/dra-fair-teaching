@@ -41,7 +41,7 @@ format:
     mutliplex: false
 ---
 
-## Learning objectives
+## Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
 
 - You can share your teaching materials in accordance with FAIR principles
 - You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
@@ -319,3 +319,5 @@ Thank you!
 :::
 
 ::::
+
+
