@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Reproducible and FAIR Teaching Materials",
     "section": "Overview",
-    "text": "Overview\n\n\nOutline\n\nDefinitions (FAIR/Reproducibility)\nIntroduction to tools (Quarto and GitHub)\nIf there is time: Demo?\n\n\n\n\nLearning objectives 1\n\nYou can share your teaching materials in accordance with FAIR principles\nYou can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub\n\n\nthanks to Digital Research Academy didactics lesson by Julia Pauquet 🙏"
+    "text": "Overview\n\n\nOutline\n\nDefinitions (FAIR/Reproducibility)\nIntroduction to tools (Quarto and GitHub)\nIf there is time: Demo?\n\n\n\n\nLearning objectives 1\n\nYou can share your teaching materials in accordance with FAIR principles\nYou can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)\n\n\nthanks to Digital Research Academy didactics lesson by Julia Pauquet 🙏"
   },
   {
     "objectID": "index.html#what-is-fair",
@@ -70,13 +70,6 @@
     "text": "Features of Quarto presentations\n\n\ntaken from this Quarto demo presentation (Source)"
   },
   {
-    "objectID": "index.html#reproducibility",
-    "href": "index.html#reproducibility",
-    "title": "Reproducible and FAIR Teaching Materials",
-    "section": "Reproducibility",
-    "text": "Reproducibility\n“[…] when the same analysis steps performed on the same dataset […] produce the same answer.” (Turing Way)\n\nby Scriberia for The Turing Way community (CC-BY 4.0)"
-  },
-  {
     "objectID": "index.html#why-we-need-version-control",
     "href": "index.html#why-we-need-version-control",
     "title": "Reproducible and FAIR Teaching Materials",
@@ -102,7 +95,7 @@
     "href": "index.html#more-benefits-of-github-for-teaching-project-management",
     "title": "Reproducible and FAIR Teaching Materials",
     "section": "More benefits of Git(Hub) for (teaching) project management",
-    "text": "More benefits of Git(Hub) for (teaching) project management\n\n\n Discuss and plan your teaching preparation in issues (even just with your future / past self)\n Ask questions, share ideas and discuss with your community via GitHub Discussions\n Propose changes to the teaching materials using pull requests 1\n Create a fork of someone else’s repository and extend their teaching materials\n Manage access to your teaching materials with detailed permissions and roles\n Add documentation to your repository or in a separate wiki\n Access to more features and tools for teaching via GitHub Campus Global\n\n\n\nNote\n\n The dominance of GitHub (a for-profit company owned by Microsoft) is not uncontested (see #GiveUpGitHub)\n A project on GitHub is not a FAIR archiving of scholarly outputs (see later slide on how to archive on Zenodo)\n\n\n\n\nGitHub Copilot is a for-profit AI product trained with projects that were hosted on GitHub, including many that have licenses that require proper author attribution etc.\nGitHub has a for-profit software services contract with the USA Immigration and Customs Enforcement (ICE)\nArchiving on GitHub is not enough\n\n\npull requests on GitHub, merge requests on GitLab"
+    "text": "More benefits of Git(Hub) for (teaching) project management\n\n\n Discuss and plan your teaching preparation in issues (even just with your future / past self)\n Ask questions, share ideas and discuss with your community via GitHub Discussions\n Propose changes to the teaching materials using pull requests 1\n Create a fork of someone else’s repository and extend their teaching materials\n Manage access to your teaching materials with detailed permissions and roles\n Add documentation to your repository or in a separate wiki\n Access to more features and tools for teaching via GitHub Campus Global\n\n\n\nNote\n\n The dominance of GitHub (a for-profit company owned by Microsoft) is not uncontested (see #GiveUpGitHub)\n A project on GitHub is not a FAIR archiving of scholarly outputs (see previous and following slides)\n\n\n\n\nGitHub Copilot is a for-profit AI product trained with projects that were hosted on GitHub, including many that have licenses that require proper author attribution etc.\nGitHub has a for-profit software services contract with the USA Immigration and Customs Enforcement (ICE)\nArchiving on GitHub is not enough\n\n\npull requests on GitHub, merge requests on GitLab"
   },
   {
     "objectID": "index.html#example-collaborative-workflow-with-issues-and-pull-requests",
@@ -144,6 +137,6 @@
     "href": "index.html#thank-you",
     "title": "Reproducible and FAIR Teaching Materials",
     "section": "Thank you! 🙏",
-    "text": "Thank you! 🙏\n\n\n\nEsther Plomp\n e.plomp@tudelft.nl  estherplomp.github.io  GitHub  Mastodon\n\n\nLennart Wittkuhn\n lennart.wittkuhn@uni-hamburg.de  lennartwittkuhn.com  GitHub  Mastodon\n\n💻 Slides: Slides are publicly available at lennartwittkuhn.com/dra-fair-teaching\n📦 Software: Reproducible slides build with Quarto and deployed to GitHub Pages using GitHub Actions (details in the Quarto docs)\n Source: Source code is available at github.com/lnnrtwttkhn/dra-fair-teaching\n🖲️ DOI: TBA (generated using GitHub + Zenodo, details in the GitHub docs)\n License: Creative Commons Attribution 4.0 International (CC BY 4.0)\n💬 Contact: We welcome any feedback via email or GitHub issues. Thank you!"
+    "text": "Thank you! 🙏\n\n\n\nEsther Plomp\n e.plomp@tudelft.nl  estherplomp.github.io  GitHub  Mastodon\n\n\nLennart Wittkuhn\n lennart.wittkuhn@uni-hamburg.de  lennartwittkuhn.com  GitHub  Mastodon\n\n Images: Scriberia with The Turing Way community (License: CC BY 4.0)\n💻 Slides: Slides are publicly available at lennartwittkuhn.com/dra-fair-teaching\n📦 Software: Reproducible slides build with Quarto and deployed to GitHub Pages using GitHub Actions (details in the Quarto docs)\n Source: Source code is available at github.com/lnnrtwttkhn/dra-fair-teaching\n🖲️ DOI: TBA (generated using GitHub + Zenodo, details in the GitHub docs)\n License: Creative Commons Attribution 4.0 International (CC BY 4.0)\n💬 Contact: We welcome any feedback via email or GitHub issues. Thank you!"
   }
 ]
