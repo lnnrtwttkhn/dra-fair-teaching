@@ -223,9 +223,10 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 :::
 
 ## Thank you!
+## Thank you! :pray:
 
 :::: {.columns}
-::: {.column width="35%"}
+::: {.column width="30%"}
 
 ![](https://avatars.githubusercontent.com/u/46314469?v=4)
 
@@ -235,8 +236,10 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 {{< fa home-user >}} [estherplomp.github.io](https://estherplomp.github.io/)<br>
 {{< fa brands github >}} [GitHub](https://github.com/EstherPlomp)<br>
 {{< fa brands mastodon >}} [Mastodon](https://scholar.social/@toothFAIRy)
+
 :::
-::: {.column width="35%"}
+
+::: {.column width="30%"}
 ![](https://avatars.githubusercontent.com/u/42233065?v=4)
 
 #### Lennart Wittkuhn
@@ -246,6 +249,21 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 {{< fa brands github >}} [GitHub](https://github.com/lnnrtwttkhn)<br>
 {{< fa brands mastodon >}} [Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
 :::
-::: {.column width="30%"}
+
+::: {.column width="40%"}
+
+:computer: **Slides:** Slides are publicly available at [lennartwittkuhn.com/dra-fair-teaching](https://lennartwittkuhn.com/ddlitlab-presentation/)
+
+:package: **Software:** Reproducible slides build with [Quarto](https://quarto.org/) and deployed to [GitHub Pages](https://pages.github.com/) using [GitHub Actions](https://github.com/features/actions) (details in the [Quarto docs](https://quarto.org/docs/publishing/github-pages.html))
+
+{{< fa brands github >}} **Source:** Source code is available at [github.com/lnnrtwttkhn/dra-fair-teaching](https://github.com/lnnrtwttkhn/dra-fair-teaching)
+
+:trackball: **DOI:** TBA (generated using GitHub + [Zenodo](https://zenodo.org/), details in the [GitHub docs](https://guides.github.com/activities/citable-code/))
+
+{{< fa scale-balanced >}} **License:** Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+
+:speech_balloon: **Contact:** We welcome any feedback via [email](mailto:lennart.wittkuhn@uni-hamburg.de?cc=e.plomp@tudelft.nl) or [GitHub issues](https://github.com/lnnrtwttkhn/dra-fair-teaching/issues).
+Thank you!
 :::
+
 ::::
