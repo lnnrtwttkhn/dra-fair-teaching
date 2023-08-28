@@ -353,13 +353,196 @@
 
   <p class="date">August 29, 2023</p>
 </section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning objectives <sup>1</sup></h2>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<div class="fragment">
+<!-- -->
+<h3 id="outline">Outline</h3>
+<ul>
+<li>Definitions (FAIR/Reproducibility)</li>
+<li>Introduction to tools (Quarto and GitHub)</li>
+<li>If there is time: Demo?</li>
+</ul>
+</div>
+<div class="fragment">
+<!-- -->
+<h3 id="learning-objectives">Learning objectives <sup>1</sup></h3>
 <ul>
 <li>You can share your teaching materials in accordance with FAIR principles</li>
 <li>You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub</li>
 </ul>
+</div>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>thanks to Digital Research Academy didactics lesson by Julia Pauquet <span class="emoji" data-emoji="pray">🙏</span></p></li></ol></aside></section>
+<section id="what-is-fair" class="slide level2">
+<h2>What is FAIR?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment">
+<p><strong>Findable</strong></p>
+<ul>
+<li>Descriptive metadata and persistent identifier</li>
+</ul>
+<p><strong>Accessible</strong></p>
+<ul>
+<li>Data could be openly available OR authentication and authorisation procedures are necessary</li>
+</ul>
+<p><strong>Interoperable</strong></p>
+<ul>
+<li>Data needs to be integrated with other data and interoperate with applications or workflows</li>
+</ul>
+<p><strong>Reusable</strong></p>
+<ul>
+<li>Documentation and license</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://zenodo.org/record/3678226/files/FAIRPrinciples.jpg?download=1" style="width:80.0%"></p>
+<figcaption><a href="https://zenodo.org/record/3678226/files/FAIRPrinciples.jpg?download=1">by Scriberia for The Turing Way community (CC-BY 4.0)</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<section id="how-does-fair-apply-to-teaching-materials" class="title-slide slide level1 center">
+<h1>How does FAIR apply to teaching materials?</h1>
+<p>Teaching materials can be considered as similar/equal to research outputs. FAIR principles also apply!</p>
+</section>
+<section id="fair-teaching-materials" class="slide level2">
+<h2>FAIR teaching materials?</h2>
+<div class="columns">
+<div class="column" style="width:42%;">
+<div class="fragment">
+<!-- -->
+<h4 id="findableaccessible">Findable/Accessible</h4>
+<ul>
+<li>Share your slides/materials on a data repository to receive a DOI and ensure long term preservation
+<ul>
+<li><a href="https://zenodo.org/">Zenodo</a> (indexed, DOI, preservation)</li>
+<li><a href="https://osf.io/">OSF</a> (DOI?, forkable)</li>
+</ul></li>
+<li>Share your materials via a journal article
+<ul>
+<li><a href="https://doi.org/10.7191/jeslib.2022.1221%20(2022)">Taking the TU Delft Carpentries Workshops Online</a></li>
+</ul></li>
+<li>Share your materials in a training material registry
+<ul>
+<li><a href="https://tess.elixir-europe.org/">TesS</a> (ELIXIR)</li>
+<li><a href="https://oercommons.org/">OERcommons</a></li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:58%;">
+<div class="fragment">
+<!-- -->
+<h4 id="interoperable">Interoperable</h4>
+<ul>
+<li>Use commonly used formats (powerpoint) or open formats such as markdown documents
+<ul>
+<li>Pdf is open but difficult to reuse!</li>
+</ul></li>
+<li>Use common terminology
+<ul>
+<li>Instructor/Helpers for Carpentry workshops</li>
+</ul></li>
+<li>Integrate with other resources where possible
+<ul>
+<li>Citations</li>
+<li>Reuse of slides</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<!-- -->
+<h4 id="reusable">Reusable</h4>
+<ul>
+<li>Add documentation
+<ul>
+<li>Information sheets</li>
+</ul></li>
+<li>Add metadata
+<ul>
+<li>learning objectives!, required resources, structure</li>
+</ul></li>
+<li>Share under an Open License such as CC-BY
+<ul>
+<li>For slides/data: <a href="https://creativecommons.org/licenses/">Creative Commons Licenses</a></li>
+<li>For software/code: <a href="https://choosealicense.com/">Choose a License</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="ten-simple-rules-for-making-training-materials-fair" class="slide level2">
+<h2>Ten simple rules for making training materials FAIR</h2>
+<p><a href="https://doi.org/10.1371/journal.pcbi.1007854">https://doi.org/10.1371/journal.pcbi.1007854</a></p>
+
+<img data-src="https://zenodo.org/record/3593258/files/10%20simple%20rules%20for%20making%20training%20materials%20FAIR.jpg?download=1" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://zenodo.org/record/3593258/files/10%20simple%20rules%20for%20making%20training%20materials%20FAIR.jpg?download=1">Illustration for paper “Ten simple rules for making training materials FAIR” (CC-BY 4.0)</a></p></section></section>
+<section>
+<section id="reproducible-and-fair-teaching-materials" class="title-slide slide level1 center">
+<h1>“Reproducible and FAIR Teaching Materials”</h1>
+
+</section>
+<section id="what-is-reproducibility" class="slide level2">
+<h2>What is Reproducibility?</h2>
+<p><em>“[…] when the same analysis steps performed on the same dataset […] produce the same answer.”</em> (<a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions">Turing Way</a>)</p>
+
+<img data-src="https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1">by Scriberia for The Turing Way community (CC-BY 4.0)</a></p></section>
+<section id="how-does-reproducbility-apply-to-teaching-materials" class="slide level2">
+<h2>How does reproducbility apply to teaching materials?</h2>
+<p>Comes close to the Interoperability and Reusable principles:</p>
+<ul>
+<li>Integrating materials</li>
+<li>Formatting</li>
+<li>Software/code</li>
+<li>Similar learning goals/objectives and outcomes</li>
+</ul>
+<div class="fragment">
+<p><strong>Practice what you preach!</strong></p>
+<p>By setting up your teaching materials in a reproducible manner, you demonstrate the value of reproducibility directly</p>
+</div>
+</section>
+<section id="fair-and-reproducible-training-materials-are-beneficial-to-you" class="slide level2">
+<h2>FAIR and reproducible training materials are beneficial to you!</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment">
+<ul>
+<li>Information sheets saves time in sharing information</li>
+<li>Clear communication (or you can update the information!)</li>
+<li>Saves time in on-boarding/re-using materials</li>
+<li>Preserved &amp; Findable</li>
+<li>Easy to share within and outside your team</li>
+<li>Provides you and collaborators with credit (visibility, DOI, citations)</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://zenodo.org/record/5706310/files/recognition.jpg?download=1" style="width:80.0%"></p>
+<figcaption><a href="https://zenodo.org/record/5706310/files/recognition.jpg?download=1">by Scriberia for The Turing Way community (CC-BY 4.0)</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section id="questions-about-fairreproducible" class="title-slide slide level1 center">
+<h1>Questions about FAIR/Reproducible?</h1>
+
+</section>
+
+<section id="break" class="title-slide slide level1 center">
+<h1>Break</h1>
+
+</section>
+
 <section>
 <section id="what-is-quarto" class="title-slide slide level1 center">
 <h1>What is Quarto?</h1>
