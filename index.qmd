@@ -200,7 +200,7 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 
 **Summary:** This course provides PhD candidates with the essential knowledge and the core skills to manage research data according to best practice.
 
-{{< fa desktop >}} [estherplomp.github.io/TNW-RDM-101](https://estherplomp.github.io/TNW-RDM-101/)
+{{< fa brands internet-explorer >}} [estherplomp.github.io/TNW-RDM-101](https://estherplomp.github.io/TNW-RDM-101/)
 
 ```{=html}
 <iframe width="100%" height="74%" src="https://estherplomp.github.io/TNW-RDM-101/" title="Course Website"></iframe>
@@ -212,7 +212,8 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 
 **Summary:** A hands-on seminar about version control of code and data using Git with curated online materials, interactive discussions, quizzes and exercises, targeted at (aspiring) researchers in Psychology & Neuroscience.
 
-{{< fa desktop >}} [lennartwittkuhn.com/version-control-course-uhh-ws23](https://lennartwittkuhn.com/version-control-course-uhh-ws23/)
+{{< fa brands internet-explorer >}} [lennartwittkuhn.com/version-control-course-uhh-ws23](https://lennartwittkuhn.com/version-control-course-uhh-ws23/)
+
 ```{=html}
 <iframe width="100%" height="74%" src="https://lennartwittkuhn.com/version-control-course-uhh-ws23/" title="Course Website"></iframe>
 ```
@@ -225,7 +226,7 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 
 ## Version Control Book (Example for a [Quarto Book](https://quarto.org/docs/books/))
 
-{{< fa desktop >}} [lennartwittkuhn.com/version-control-book](https://lennartwittkuhn.com/version-control-book)
+{{< fa brands internet-explorer >}} [lennartwittkuhn.com/version-control-book](https://lennartwittkuhn.com/version-control-book)
 
 ```{=html}
 <iframe width="100%" height="80%" src="https://lennartwittkuhn.com/version-control-book" title="Version Control Book"></iframe>
