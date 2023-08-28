@@ -51,14 +51,15 @@ format:
 ## About Quarto
 
 ::: {.incremental}
-- Quarto is a new, open-source, scientific and technical publishing system
-- It aims to make the process of creating and collaborating dramatically better
-- Consistent implementation of features across outputs: tabsets, code-folding, syntax highlighting, etc.
-- Helpful guardrails for new learners: YAML completion, informative syntax errors, etc.
-- Support for R, Python, Julia, Observable and more functions via Jupyter
+- [Quarto](https://quarto.org/) is a new, open-source, scientific and technical publishing system
+- **Publish reproducible** presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.
+- **Consistent implementation** of features across outputs: tabsets, code-folding, syntax highlighting, etc.
+- **Beginner-friendly** with helpful guardrails for new learners, incl. YAML completion, informative syntax errors, etc.
+- **Multi-language** support for R, Python, Julia, Observable and more functions via Jupyter
+- Quarto extends [RMarkdown](https://rmarkdown.rstudio.com/) and shares similarities with [Juypter Notebooks](https://jupyter.org/).
 :::
 
-![[Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_3840.png?h=783eba914284e5adfb9feadcf4ba5f1e){width=50%}
+![[Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_3840.png?h=783eba914284e5adfb9feadcf4ba5f1e){width=70%}
 
 ## Features of Quarto presentations
 
