@@ -41,12 +41,25 @@ format:
     mutliplex: false
 ---
 
-## Getting up
+## Learning goals ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
 
-- Turn off alarm
-- Get out of bed
+::: {.fragment}
+#### Which are the most important competencies?
 
-## Going to sleep
+- How to share teaching materials in accordance with FAIR principles
+- Understand how FAIR principles relate to teaching materials
+:::
 
-- Get in bed
-- Count sheep
+
+::: {.fragment}
+
+:::
+
+
+
+::: {.fragment}
+#### Final objectives
+
+- You can share your teaching materials in accordance with FAIR principles
+- You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
+:::
