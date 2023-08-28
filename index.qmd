@@ -41,9 +41,10 @@ format:
     mutliplex: false
 ---
 
-## Getting up
+## Learning goals ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
 
 ::: {.fragment}
+
 #### Final objectives
 
 - You can share your teaching materials in accordance with FAIR principles
@@ -322,3 +323,5 @@ Thank you!
 :::
 
 ::::
+
+
