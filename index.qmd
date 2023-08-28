@@ -34,15 +34,28 @@ format:
 
 ## Getting up
 
-- Turn off alarm
-- Get out of bed
+::: {.fragment}
+#### Final objectives
 
-## Going to sleep
+- You can share your teaching materials in accordance with FAIR principles
+- You can develop reproducible teaching materials collaboratively using tools like Quarto and GitHub
+:::
 
-- Get in bed
-- Count sheep
+# What is Quarto?
 
-## Features of Quarto Presentations
+## About Quarto
+
+::: {.incremental}
+- Quarto is a new, open-source, scientific and technical publishing system
+- It aims to make the process of creating and collaborating dramatically better
+- Consistent implementation of features across outputs: tabsets, code-folding, syntax highlighting, etc.
+- Helpful guardrails for new learners: YAML completion, informative syntax errors, etc.
+- Support for R, Python, Julia, Observable and more functions via Jupyter
+:::
+
+![[Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_3840.png?h=783eba914284e5adfb9feadcf4ba5f1e){width=50%}
+
+## Features of Quarto presentations
 
 ```{=html}
 <iframe width="100%" height="80%" src="https://quarto.org/docs/presentations/revealjs/demo/" title="Quarto Revealjs Demo"></iframe>
