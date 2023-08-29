@@ -3,10 +3,10 @@ title: "Reproducible and FAIR Teaching Materials"
 subtitle: |
   Digital Research Academy Train the Trainer program
   
-  [License: CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-  [{{< fa brands github >}} Source](https://github.com/lnnrtwttkhn/dra-fair-teaching)
-  [{{< fa brands internet-explorer >}} Slides](https://lennartwittkuhn.com/dra-fair-teaching/)
+  [{{< fa brands github >}} Source](https://github.com/lnnrtwttkhn/dra-fair-teaching) | 
+  [{{< fa brands internet-explorer >}}Slides](https://lennartwittkuhn.com/dra-fair-teaching/)
   
+  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
   [![DOI](https://zenodo.org/badge/682015737.svg)](https://zenodo.org/badge/latestdoi/682015737)
 authors:
   - id: plomp
