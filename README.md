@@ -14,7 +14,8 @@ Prepared for the [Digital Research Academy](https://digital-research.academy/) [
 - [R](https://www.r-project.org/) / [RStudio](https://posit.co/download/rstudio-desktop/) (recommended but not required)
 
 <details>
-  <summary>Click here for details about `renv`</summary>
+<summary>Click here for details about renv</summary>
+  
 ```R
 # Bootstrapping renv 1.0.0 ---------------------------------------------------
 - Downloading renv ... OK
@@ -63,8 +64,8 @@ The following package(s) will be updated:
 - xfun          [* -> 0.40]
 
 # Installing packages --------------------------------------------------------
-
 ```
+  
 </details>
 
 ## License
