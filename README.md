@@ -1,6 +1,7 @@
 # Reproducible & FAIR Teaching Materials
 
 [![Quarto Publish](https://github.com/lnnrtwttkhn/dra-fair-teaching/actions/workflows/publish.yml/badge.svg)](https://github.com/lnnrtwttkhn/dra-fair-teaching/actions/workflows/publish.yml)
+[![DOI](https://zenodo.org/badge/682015737.svg)](https://zenodo.org/badge/latestdoi/682015737)
 
 ## About
 

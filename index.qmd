@@ -7,7 +7,7 @@ subtitle: |
   [{{< fa brands github >}} Source](https://github.com/lnnrtwttkhn/dra-fair-teaching)
   [{{< fa brands internet-explorer >}} Slides](https://lennartwittkuhn.com/dra-fair-teaching/)
   
-  DOI: TBA
+  [![DOI](https://zenodo.org/badge/682015737.svg)](https://zenodo.org/badge/latestdoi/682015737)
 authors:
   - id: plomp
     name:
@@ -519,7 +519,7 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 
 {{< fa brands github >}} **Source:** Source code is available at [github.com/lnnrtwttkhn/dra-fair-teaching](https://github.com/lnnrtwttkhn/dra-fair-teaching)
 
-:trackball: **DOI:** TBA (generated using GitHub + [Zenodo](https://zenodo.org/), details in the [GitHub docs](https://guides.github.com/activities/citable-code/))
+:trackball: **DOI:** [10.5281/zenodo.8296951 ](https://zenodo.org/badge/latestdoi/682015737) (generated using GitHub + [Zenodo](https://zenodo.org/), see [GitHub docs](https://guides.github.com/activities/citable-code/))
 
 {{< fa scale-balanced >}} **License:** Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 
