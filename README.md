@@ -9,8 +9,9 @@ Prepared for the Digital Research Academy train-the-trainer program.
 
 ## Requirements
 
-- [Quarto](https://quarto.org/)
-- [renv](https://rstudio.github.io/renv/articles/renv.html)
+- [Quarto](https://quarto.org/) (tested with version 1.3.321)
+- [renv](https://rstudio.github.io/renv/articles/renv.html) (version 1.0.0)
+- [R](https://www.r-project.org/) / [RStudio](https://posit.co/download/rstudio-desktop/) (recommended but not required)
 
 <details>
   <summary>Click here for details about `renv`</summary>
