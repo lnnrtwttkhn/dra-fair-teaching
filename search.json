@@ -137,7 +137,7 @@
     "href": "index.html#summary",
     "title": "Reproducible and FAIR Teaching Materials",
     "section": "Summary",
-    "text": "Summary\n\n\nLearning objectives\n\nYou can share your teaching materials in accordance with FAIR principles\nYou can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)\n\n\n\n\nDemonstrations\n\nArchiving a GitHub repository on Zenodo\nAutomated deployment of Quarto websites to GitHub Pages\n\n\n\n\nResources\n\nQuarto for Academics by Mine Çetinkaya-Rundel\nThe Turing Way Community. (2019). [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app\nRichard McElreath (2020). Science as amateur software development. YouTube"
+    "text": "Summary\n\n\nLearning objectives\n\nYou can share your teaching materials in accordance with FAIR principles\nYou can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)\n\n\n\n\nDemonstrations\n\nArchiving a GitHub repository on Zenodo\nAutomated deployment of Quarto websites to GitHub Pages\n\n\n\n\nResources\n\nQuarto for Academics by Mine Çetinkaya-Rundel\nThe Turing Way handbook to reproducible, ethical and collaborative data science\nRichard McElreath (2020). Science as amateur software development. YouTube"
   },
   {
     "objectID": "index.html#thank-you",
