@@ -478,8 +478,8 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 ::: {.fragment}
 ### Resources
 
-- [Quarto for Academics by Mine Çetinkaya-Rundel](https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/)
-- The Turing Way Community. (2019). [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app
+- [Quarto for Academics](https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/) by Mine Çetinkaya-Rundel
+- [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app)
 - Richard McElreath (2020). [Science as amateur software development](https://www.youtube.com/watch?v=zwRdO9_GGhY). YouTube
 :::
 
