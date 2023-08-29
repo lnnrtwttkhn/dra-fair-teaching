@@ -323,6 +323,8 @@
       margin-right: 0; 
     }
   </style>
+  <link href="site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="site_libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -330,7 +332,9 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Reproducible and FAIR Teaching Materials</h1>
-  <p class="subtitle">Digital Research Academy Train the Trainer program</p>
+  <p class="subtitle"></p><p>Digital Research Academy Train the Trainer program</p>
+<p><a href="https://creativecommons.org/licenses/by-sa/4.0/">License: CC BY-SA 4.0</a> <a href="https://github.com/lnnrtwttkhn/dra-fair-teaching"><i class="fa-brands fa-github" aria-label="github"></i> Source</a> <a href="https://lennartwittkuhn.com/dra-fair-teaching/"><i class="fa-brands fa-internet-explorer" aria-label="internet-explorer"></i> Slides</a></p>
+<p>DOI: TBA</p><p></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -359,8 +363,8 @@
 <!-- -->
 <h3 id="outline">Outline</h3>
 <ul>
-<li>Definitions (FAIR/Reproducibility)</li>
-<li>Introduction to tools (Quarto and GitHub)</li>
+<li>Definitions (FAIR/Reproducibility) - Esther</li>
+<li>Introduction to tools (Quarto and GitHub) - Lennart</li>
 <li>If there is time: Demo?</li>
 </ul>
 </div>
@@ -493,8 +497,8 @@
 <p><em>“[…] when the same analysis steps performed on the same dataset […] produce the same answer.”</em> (<a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions">Turing Way</a>)</p>
 
 <img data-src="https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1">by Scriberia for The Turing Way community (CC-BY 4.0)</a></p></section>
-<section id="how-does-reproducbility-apply-to-teaching-materials" class="slide level2">
-<h2>How does reproducbility apply to teaching materials?</h2>
+<section id="how-does-reproducibility-apply-to-teaching-materials" class="slide level2">
+<h2>How does reproducibility apply to teaching materials?</h2>
 <p>Comes close to the Interoperability and Reusable principles:</p>
 <ul>
 <li>Integrating materials</li>
@@ -540,7 +544,14 @@
 
 <section id="break" class="title-slide slide level1 center">
 <h1>Break</h1>
-
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_ee3e3ceb" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
 </section>
 
 <section>
@@ -558,6 +569,7 @@
 <li class="fragment"><strong>Beginner-friendly</strong> with helpful guardrails for new learners, incl.&nbsp;YAML completion, informative syntax errors, etc.</li>
 <li class="fragment"><strong>Multi-language</strong> support for R, Python, Julia, Observable and more functions via Jupyter</li>
 <li class="fragment">Quarto extends <a href="https://rmarkdown.rstudio.com/">RMarkdown</a> and shares similarities with <a href="https://jupyter.org/">Juypter Notebooks</a>.</li>
+<li class="fragment">Support and community</li>
 </ul>
 </div>
 
@@ -831,6 +843,34 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<div class="fragment">
+<!-- -->
+<h3 id="learning-objectives-1">Learning objectives</h3>
+<ul>
+<li>You can share your teaching materials in accordance with FAIR principles</li>
+<li>You can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)</li>
+</ul>
+</div>
+<div class="fragment">
+<!-- -->
+<h3 id="demonstrations">Demonstrations</h3>
+<ul>
+<li>Archiving a GitHub repository on Zenodo</li>
+<li>Automated deployment of Quarto websites to GitHub Pages</li>
+</ul>
+</div>
+<div class="fragment">
+<!-- -->
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/">Quarto for Academics by Mine Çetinkaya-Rundel</a></li>
+<li>The Turing Way Community. (2019). [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app</li>
+<li>Richard McElreath (2020). <a href="https://www.youtube.com/watch?v=zwRdO9_GGhY">Science as amateur software development</a>. YouTube</li>
+</ul>
+</div>
+</section>
 <section id="thank-you" class="slide level2">
 <h2>Thank you! <span class="emoji" data-emoji="pray">🙏</span></h2>
 <div class="columns">
@@ -1071,6 +1111,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

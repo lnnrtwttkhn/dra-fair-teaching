@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Reproducible and FAIR Teaching Materials",
     "section": "Overview",
-    "text": "Overview\n\n\nOutline\n\nDefinitions (FAIR/Reproducibility)\nIntroduction to tools (Quarto and GitHub)\nIf there is time: Demo?\n\n\n\n\nLearning objectives 1\n\nYou can share your teaching materials in accordance with FAIR principles\nYou can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)\n\n\nthanks to Digital Research Academy didactics lesson by Julia Pauquet 🙏"
+    "text": "Overview\n\n\nOutline\n\nDefinitions (FAIR/Reproducibility) - Esther\nIntroduction to tools (Quarto and GitHub) - Lennart\nIf there is time: Demo?\n\n\n\n\nLearning objectives 1\n\nYou can share your teaching materials in accordance with FAIR principles\nYou can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)\n\n\nthanks to Digital Research Academy didactics lesson by Julia Pauquet 🙏"
   },
   {
     "objectID": "index.html#what-is-fair",
@@ -42,11 +42,11 @@
     "text": "What is Reproducibility?\n“[…] when the same analysis steps performed on the same dataset […] produce the same answer.” (Turing Way)\n\nby Scriberia for The Turing Way community (CC-BY 4.0)"
   },
   {
-    "objectID": "index.html#how-does-reproducbility-apply-to-teaching-materials",
-    "href": "index.html#how-does-reproducbility-apply-to-teaching-materials",
+    "objectID": "index.html#how-does-reproducibility-apply-to-teaching-materials",
+    "href": "index.html#how-does-reproducibility-apply-to-teaching-materials",
     "title": "Reproducible and FAIR Teaching Materials",
-    "section": "How does reproducbility apply to teaching materials?",
-    "text": "How does reproducbility apply to teaching materials?\nComes close to the Interoperability and Reusable principles:\n\nIntegrating materials\nFormatting\nSoftware/code\nSimilar learning goals/objectives and outcomes\n\n\nPractice what you preach!\nBy setting up your teaching materials in a reproducible manner, you demonstrate the value of reproducibility directly"
+    "section": "How does reproducibility apply to teaching materials?",
+    "text": "How does reproducibility apply to teaching materials?\nComes close to the Interoperability and Reusable principles:\n\nIntegrating materials\nFormatting\nSoftware/code\nSimilar learning goals/objectives and outcomes\n\n\nPractice what you preach!\nBy setting up your teaching materials in a reproducible manner, you demonstrate the value of reproducibility directly"
   },
   {
     "objectID": "index.html#fair-and-reproducible-training-materials-are-beneficial-to-you",
@@ -60,7 +60,7 @@
     "href": "index.html#about-quarto",
     "title": "Reproducible and FAIR Teaching Materials",
     "section": "About Quarto",
-    "text": "About Quarto\n\n\nQuarto is a new, open-source, scientific and technical publishing system\nPublish reproducible presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.\nConsistent implementation of features across outputs: tabsets, code-folding, syntax highlighting, etc.\nBeginner-friendly with helpful guardrails for new learners, incl. YAML completion, informative syntax errors, etc.\nMulti-language support for R, Python, Julia, Observable and more functions via Jupyter\nQuarto extends RMarkdown and shares similarities with Juypter Notebooks.\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "About Quarto\n\n\nQuarto is a new, open-source, scientific and technical publishing system\nPublish reproducible presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.\nConsistent implementation of features across outputs: tabsets, code-folding, syntax highlighting, etc.\nBeginner-friendly with helpful guardrails for new learners, incl. YAML completion, informative syntax errors, etc.\nMulti-language support for R, Python, Julia, Observable and more functions via Jupyter\nQuarto extends RMarkdown and shares similarities with Juypter Notebooks.\nSupport and community\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "index.html#features-of-quarto-presentations",
@@ -131,6 +131,13 @@
     "title": "Reproducible and FAIR Teaching Materials",
     "section": "Create a DOI for your teaching materials with Zenodo",
     "text": "Create a DOI for your teaching materials with Zenodo\n\n\n\n\n“Zenodo, a CERN service, is an open dependable home for the long-tail of science, enabling researchers to share and preserve any research outputs in any size, any format and from any science.” – from the Zenodo GitHub README\n\n\n\n\n\nZenodo Logo (CC0 license)\n\n\n\n\n\n\n\nIntegrate your teaching materials on GitHub with Zenodo\n\n“To make your repositories easier to reference in academic literature, you can create persistent identifiers, also known as Digital Object Identifiers (DOIs). You can use the data archiving tool Zenodo to archive a repository on GitHub.com and issue a DOI for the archive.” – Details in the GitHub documentation\n\n\n\n\n\n\nNavigate to the login page for Zenodo.\nClick Log in with GitHub.\nReview the information about access permissions, then click Authorize zenodo.\nNavigate to the Zenodo GitHub page.\nTo the right of the name of the repository you want to archive, toggle the button to On.\n\n\n\n\n\n“Making your project citable” by CodeRefinery (CC BY 4.0))\n\n\n\n\n\n\n\nCERN, the European Organization for Nuclear Research, is one of the world’s largest and most respected centres for scientific research.\n\n\n\n\nDemonstration: We are now going to add a DOI to this presentation."
+  },
+  {
+    "objectID": "index.html#summary",
+    "href": "index.html#summary",
+    "title": "Reproducible and FAIR Teaching Materials",
+    "section": "Summary",
+    "text": "Summary\n\n\nLearning objectives\n\nYou can share your teaching materials in accordance with FAIR principles\nYou can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)\n\n\n\n\nDemonstrations\n\nArchiving a GitHub repository on Zenodo\nAutomated deployment of Quarto websites to GitHub Pages\n\n\n\n\nResources\n\nQuarto for Academics by Mine Çetinkaya-Rundel\nThe Turing Way Community. (2019). [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app\nRichard McElreath (2020). Science as amateur software development. YouTube"
   },
   {
     "objectID": "index.html#thank-you",
