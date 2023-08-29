@@ -1,6 +1,13 @@
 ---
 title: "Reproducible and FAIR Teaching Materials"
-subtitle: "Digital Research Academy Train the Trainer program"
+subtitle: |
+  Digital Research Academy Train the Trainer program
+  
+  [License: CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+  [{{< fa brands github >}} Source](https://github.com/lnnrtwttkhn/dra-fair-teaching)
+  [{{< fa brands internet-explorer >}} Slides](https://lennartwittkuhn.com/dra-fair-teaching/)
+  
+  DOI: TBA
 authors:
   - id: plomp
     name:
@@ -47,8 +54,8 @@ format:
 
 ### Outline
 
-- Definitions (FAIR/Reproducibility)
-- Introduction to tools (Quarto and GitHub)
+- Definitions (FAIR/Reproducibility) - Esther
+- Introduction to tools (Quarto and GitHub) - Lennart
 - If there is time: Demo?
 
 :::
@@ -173,7 +180,7 @@ Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-
 4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width="50%"
 fig-align="center"}
 
-## How does reproducbility apply to teaching materials? 
+## How does reproducibility apply to teaching materials? 
 
 Comes close to the Interoperability and Reusable principles: 
 
@@ -216,10 +223,14 @@ fig-align="center"}
 :::
 :::
 
-
 # Questions about FAIR/Reproducible?
 
 # Break
+
+```{r}
+library(countdown)
+countdown(minutes = 3, seconds = 0)
+```
 
 # What is Quarto?
 
@@ -232,6 +243,8 @@ fig-align="center"}
 - **Beginner-friendly** with helpful guardrails for new learners, incl. YAML completion, informative syntax errors, etc.
 - **Multi-language** support for R, Python, Julia, Observable and more functions via Jupyter
 - Quarto extends [RMarkdown](https://rmarkdown.rstudio.com/) and shares similarities with [Juypter Notebooks](https://jupyter.org/).
+- Support and community
+
 :::
 
 ![[Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_3840.png?h=783eba914284e5adfb9feadcf4ba5f1e){width=70%}
@@ -445,6 +458,31 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 ::: {.notes}
 - Demonstration: We are now going to add a DOI to this presentation.
 :::
+
+## Summary
+
+::: {.fragment}
+### Learning objectives
+
+- You can share your teaching materials in accordance with FAIR principles
+- You can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)
+:::
+
+::: {.fragment}
+### Demonstrations
+
+- Archiving a GitHub repository on Zenodo
+- Automated deployment of Quarto websites to GitHub Pages
+:::
+
+::: {.fragment}
+### Resources
+
+- [Quarto for Academics by Mine Çetinkaya-Rundel](https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/)
+- The Turing Way Community. (2019). [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app
+- Richard McElreath (2020). [Science as amateur software development](https://www.youtube.com/watch?v=zwRdO9_GGhY). YouTube
+:::
+
 ## Thank you! :pray:
 
 :::: {.columns}
