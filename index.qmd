@@ -3,7 +3,7 @@ title: "Reproducible and FAIR Teaching Materials"
 subtitle: |
   Digital Research Academy Train the Trainer program
   
-  [License: CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+  [License: CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
   [{{< fa brands github >}} Source](https://github.com/lnnrtwttkhn/dra-fair-teaching)
   [{{< fa brands internet-explorer >}} Slides](https://lennartwittkuhn.com/dra-fair-teaching/)
   
