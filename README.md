@@ -4,8 +4,8 @@
 
 ## About
 
-Slides for talk on "Reproducible & FAIR Teaching Materials" by Esther Plomp and Lennart Wittkuhn.
-Prepared for the Digital Research Academy train-the-trainer program.
+Slides for talk on "Reproducible & FAIR Teaching Materials" by Esther Plomp and Lennart Wittkuhn on 29 August 2023.
+Prepared for the [Digital Research Academy](https://digital-research.academy/) [train-the-trainer program](https://gitlab.com/digital-research-academy/dra-train-the-trainer).
 
 ## Requirements
 
