@@ -260,7 +260,7 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 
 <!-- End: Quarto Intro & Syntax - UNAI -->
 
-<!-- Start: Rstudio.cloud Practical (incl. Singup + Break) - NICK -->
+<!-- Start: Rstudio.cloud Practical (incl. Signup + Break) - NICK -->
 
 # Break
 
@@ -269,7 +269,7 @@ library(countdown)
 countdown(minutes = 8, seconds = 0)
 ```
 
-<!-- End: Rstudio.cloud Practical (incl. Singup + Break) - NICK -->
+<!-- End: Rstudio.cloud Practical (incl. Signup + Break) - NICK -->
 
 <!-- Start: Comparison + Demo - JAN -->
 
