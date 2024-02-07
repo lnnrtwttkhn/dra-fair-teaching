@@ -80,7 +80,7 @@ format:
 
 :::
 
-## What is FAIR?
+## What are FAIR Principles?
 
 ::: columns
 :::: {.column width="50%"}
@@ -137,7 +137,7 @@ fig-align="center"}
 
 #### Interoperable
 
-- Use commonly used formats (Powerpoint) or open formats such as markdown documents (PDF)
+- Use commonly used formats (PowerPoint / Word) or open formats such as Markdown or Quarto documents (PDF)
 - Use common terminology
 - Integrate with other resources where possible
 
@@ -169,16 +169,19 @@ fig-align="center"}
 
 Comes close to the Interoperability and Reusable principles:
 
-- Integrating materials
+- Integrating materials (minimise duplication)
 - Formatting
 - Software/code
 - Similar learning goals/objectives and outcomes
 
 ::: fragment
 
-**Practice what you preach!**
+### Practice what you preach!
 
 By setting up your teaching materials in a reproducible manner, you demonstrate the value of reproducibility directly
+
+- Useful for others
+- Useful for future you when you teach this course again
 
 :::
 
@@ -205,13 +208,13 @@ fig-align="center"}
 :::
 :::
 
-## FAIR and reproducible training materials are beneficial to you!
+## FAIR and reproducible training materials are beneficial to us!
 
 ::: columns
 
-- and Nick and Jan and Unai!
-- *We used the [Reproducible and FAIR Teaching Materials](https://osf.io/gj6hd) slides from the Aug 2023 Train the Trainer programme :-)*
-- **Thank you** very much to [Esther](https://estherplomp.github.io/) [Plomp](mailto:e.plomp@tudelft.nl) and [Lennart](https://lennartwittkuhn.com/) [Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de) whose slides we used and developed!
+- FAIR and reproducible training materials are beneficial to Nick, Jan and Unai :grinning:
+- *We used the [Reproducible and FAIR Teaching Materials](https://osf.io/gj6hd) slides from the Aug 2023 Train the Trainer programme*
+- **Thank you** very much to Esther Plomp and Lennart Wittkuhn :pray: whose [Quarto](https://github.com/jansim/dra-reproducible-materials) slides we used and developed!
 
 ::: {.column width="30%"}
 
@@ -219,12 +222,22 @@ fig-align="center"}
 
 #### Esther Plomp
 
+{{< fa envelope >}} [e.plomp@tudelft.nl](mailto:e.plomp@tudelft.nl)<br>
+{{< fa home-user >}} [estherplomp.github.io](https://estherplomp.github.io/)<br>
+{{< fa brands github >}} [GitHub](https://github.com/EstherPlomp)<br>
+{{< fa brands mastodon >}} [Mastodon](https://scholar.social/@toothFAIRy)
+
 :::
 
 ::: {.column width="30%"}
 ![](https://avatars.githubusercontent.com/u/42233065?v=4)
 
 #### Lennart Wittkuhn
+
+{{< fa envelope >}} [lennart.wittkuhn@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)<br>
+{{< fa home-user >}} [lennartwittkuhn.com](https://lennartwittkuhn.com/)<br>
+{{< fa brands github >}} [GitHub](https://github.com/lnnrtwttkhn)<br>
+{{< fa brands mastodon >}} [Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
 
 :::
 ::: {.column width="40%"}
