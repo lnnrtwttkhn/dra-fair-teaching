@@ -48,6 +48,8 @@ format:
     mutliplex: false
 ---
 
+<!-- Begin: Intro (to FAIR) - NICK -->
+
 ## Overview
 
 ::: {.fragment}
@@ -225,12 +227,9 @@ fig-align="center"}
 
 # Questions about FAIR/Reproducible?
 
-# Break
+<!-- End: Intro (to FAIR) - NICK -->
 
-```{r}
-library(countdown)
-countdown(minutes = 3, seconds = 0)
-```
+<!-- Begin: Quarto Intro & Syntax - UNAI -->
 
 # What is Quarto?
 
@@ -258,6 +257,21 @@ countdown(minutes = 3, seconds = 0)
 ::: footer
 taken from this [Quarto demo presentation](https://quarto.org/docs/presentations/revealjs/demo/) ([Source](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd))
 :::
+
+<!-- End: Quarto Intro & Syntax - UNAI -->
+
+<!-- Start: Rstudio.cloud Practical (incl. Singup + Break) - NICK -->
+
+# Break
+
+```{r}
+library(countdown)
+countdown(minutes = 8, seconds = 0)
+```
+
+<!-- End: Rstudio.cloud Practical (incl. Singup + Break) - NICK -->
+
+<!-- Start: Comparison + Demo - JAN -->
 
 # Working on teaching materials *collaboratively*
 
@@ -482,6 +496,8 @@ You can use the data archiving tool [Zenodo](https://zenodo.org/) to archive a r
 - [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app)
 - Richard McElreath (2020). [Science as amateur software development](https://www.youtube.com/watch?v=zwRdO9_GGhY). YouTube
 :::
+
+<!-- End: Comparison + Demo - JAN -->
 
 ## Thank you! :pray:
 
