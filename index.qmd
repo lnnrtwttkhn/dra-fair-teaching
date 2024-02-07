@@ -253,6 +253,7 @@ fig-align="center"}
 
 - ~~Summarise FAIR principles and reproducible research (Nick)~~
 - Talk about Quarto, one tool in your toolkit (Unai)
+- *break*
 - Show you how to make a presentation in Quarto (Nick)
 - Compare PowerPoint and Quarto (Jan)
 - Demo creating and updating slides in realtime using GitHub Actions (Jan)
@@ -293,11 +294,136 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 
 <!-- Start: Rstudio.cloud Practical (incl. Signup + Break) - NICK -->
 
-# Break
+## Outline
+
+- ~~Summarise FAIR principles and reproducible research (Nick)~~
+- ~~Talk about Quarto, one tool in your toolkit (Unai)~~
+- *break*
+- Show you how to make a presentation in Quarto (Nick)
+- Compare PowerPoint and Quarto (Jan)
+- Demo creating and updating slides in realtime using GitHub Actions (Jan)
+- Questions (you)
+
+# Posit.cloud
+
+- We will be using Posit.cloud (Rstudio.cloud) after the break
+- If you don't have an account, please set one up in the break
+- I will be around if you have questions
+
+# During the Break:
+
+- Go to [https://login.posit.cloud/](https://login.posit.cloud/)
+- Click **Sign Up** ![](images/sign-up.png){ height=30 }
+- *fill out registration form*
+- Click **Sign Up**
+- Choose **Posit Cloud** ![](images/posit-cloud.png){ height=30 }
+- *verify email in your inbox*  
+
+![](images/posit-cloud-verify-email.png){ height=200 }
+
+- click **Continue**
+
+- Click **New Project -> New RStudio Project** 
+
+- It should look like the image in the top right!
+
+![](images/new-rstudio-project.png){.absolute bottom="0" left="450" width="200"}
+
+![](images/rstudio-window.png){.absolute top="0" right="0" width="600"}
 
 ```{r}
 library(countdown)
 countdown(minutes = 8, seconds = 0)
+```
+
+## Creating a Quarto slidedeck
+
+- I will do a short demo (~4 min) about creating and updating a Quarto slide deck in RStudio Cloud. You do **not** need to follow along. 
+
+- Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves. 
+
+- Instructions are on the next slides
+
+## Demo 1
+
+- This is your RStudio window:
+
+![](images/rstudio-window.png)
+
+## Demo 2
+
+- Choose:	File > New... > Quarto Presentation
+
+![](images/file-new.png){ width="400" }
+	
+- give it a title, e.g. "Presentation"
+	
+- click Create
+
+- this is your Presentation
+
+![](images/presentation.png){ width="600" }
+
+
+## Demo 3
+
+- We are in visual mode - you can type in and see changes in real time. 
+
+- Slide list is on the right. 
+
+- To add a slide, type in some text. 
+
+- Set it to **Header 2** - you will see it appear in the list. 
+
+- Can do visual mode or source mode.
+
+![](images/source-visual.png){ height=30 }
+
+- You can make changes in either and both will update. 
+
+![](images/source.png)
+
+## Demo 4
+
+- To see the slides we need to **Render**
+
+- This converts the Quarto code to slides you can look and and share (in HTML, you can also export as PDF). 
+
+- Before we do this, we have an issue:
+
+![](images/rmarkdown.png){ height=30 }
+
+- Click **Install** to install the library. 
+
+- Then click ![](images/redner.png){ height=30 }
+
+- Slides will open in a new window. 
+
+## Now try on your own!
+
+- Any questions before we start?
+
+- Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves. You have ~15 min. 
+
+- Try some of the codes Unai introduced
+
+- Check out these links for more ideas:
+
+  - [https://quarto.org/docs/get-started/hello/rstudio.html](https://quarto.org/docs/get-started/hello/rstudio.html)
+	- [https://quarto.org/docs/presentations/](https://quarto.org/docs/presentations/)
+
+- You can do this on RStudio Cloud or your own copy of RStudio
+
+- You will need to download and install Quarto CLI:
+
+  - [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+	
+- Can also run in VS Code, Jupyter, Neovim or Text Editor
+
+
+```{r}
+library(countdown)
+countdown(minutes = 15, seconds = 0)
 ```
 
 <!-- End: Rstudio.cloud Practical (incl. Signup + Break) - NICK -->
