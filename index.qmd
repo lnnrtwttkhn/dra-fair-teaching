@@ -2,10 +2,10 @@
 title: "Reproducible and FAIR Teaching Materials"
 subtitle: |
   Digital Research Academy Train the Trainer program
-  
-  [{{< fa brands github >}} Source](https://github.com/lnnrtwttkhn/dra-fair-teaching) | 
+
+  [{{< fa brands github >}} Source](https://github.com/lnnrtwttkhn/dra-fair-teaching) |
   [{{< fa brands internet-explorer >}}Slides](https://lennartwittkuhn.com/dra-fair-teaching/)
-  
+
   [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
   [![DOI](https://zenodo.org/badge/682015737.svg)](https://zenodo.org/badge/latestdoi/682015737)
 authors:
@@ -64,14 +64,14 @@ format:
 
 ::: {.fragment}
 
-### Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:] 
+### Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:]
 
 - You can share your teaching materials in accordance with FAIR principles
 - You can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)
 
 :::
 
-## What is FAIR? 
+## What is FAIR?
 
 ::: columns
 ::: {.column width="50%"}
@@ -107,12 +107,12 @@ fig-align="center"}
 :::
 :::
 
-# How does FAIR apply to teaching materials? 
+# How does FAIR apply to teaching materials?
 
 Teaching materials can be considered as similar/equal to research outputs.
-FAIR principles also apply! 
+FAIR principles also apply!
 
-## FAIR teaching materials? 
+## FAIR teaching materials?
 ::: columns
 ::: {.column width="42%"}
 ::: {.fragment}
@@ -122,7 +122,7 @@ FAIR principles also apply!
 - Share your slides/materials on a data repository to receive a DOI and ensure long term preservation
   - [Zenodo](https://zenodo.org/) (indexed, DOI, preservation)
   - [OSF](https://osf.io/) (DOI?, forkable)
-- Share your materials via a journal article 
+- Share your materials via a journal article
   - [Taking the TU Delft Carpentries Workshops Online](https://doi.org/10.7191/jeslib.2022.1221 (2022))
 - Share your materials in a training material registry
   - [TesS](https://tess.elixir-europe.org/) (ELIXIR)
@@ -136,11 +136,11 @@ FAIR principles also apply!
 
 #### Interoperable
 
-- Use commonly used formats (powerpoint) or open formats such as markdown documents 
+- Use commonly used formats (powerpoint) or open formats such as markdown documents
   - Pdf is open but difficult to reuse!
 - Use common terminology
   - Instructor/Helpers for Carpentry workshops
-- Integrate with other resources where possible 
+- Integrate with other resources where possible
   - Citations
   - Reuse of slides
 
@@ -155,9 +155,9 @@ FAIR principles also apply!
 - Add metadata
   - learning objectives!, required resources, structure
 - Share under an Open License such as CC-BY
-  - For slides/data: [Creative Commons Licenses](https://creativecommons.org/licenses/) 
-  - For software/code: [Choose a License](https://choosealicense.com/) 
-  
+  - For slides/data: [Creative Commons Licenses](https://creativecommons.org/licenses/)
+  - For software/code: [Choose a License](https://choosealicense.com/)
+
 :::
 :::
 :::
@@ -182,9 +182,9 @@ Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-
 4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width="50%"
 fig-align="center"}
 
-## How does reproducibility apply to teaching materials? 
+## How does reproducibility apply to teaching materials?
 
-Comes close to the Interoperability and Reusable principles: 
+Comes close to the Interoperability and Reusable principles:
 
 - Integrating materials
 - Formatting
@@ -199,7 +199,7 @@ By setting up your teaching materials in a reproducible manner, you demonstrate 
 
 :::
 
-## FAIR and reproducible training materials are beneficial to you! 
+## FAIR and reproducible training materials are beneficial to you!
 
 ::: columns
 ::: {.column width="50%"}
