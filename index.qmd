@@ -31,6 +31,17 @@ authors:
     attributes:
       corresponding: boolean
       equal-contributor: true
+  - id: simson
+    name:
+      given: Jan
+      family: Simson
+      literal: Jan Simson
+    url: https://simson.io
+    email: hi@simson.io
+    orcid: 0000-0002-9406-7761
+    attributes:
+      corresponding: boolean
+      equal-contributor: true
 date: "2024-02-13"
 date-format: long
 from: markdown+emoji
