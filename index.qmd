@@ -324,7 +324,7 @@ taken from this [Quarto demo presentation](https://quarto.org/docs/presentations
 
 - Go to [https://login.posit.cloud/](https://login.posit.cloud/)
 - Click **Sign Up** ![](images/sign-up.png){ height=30 }
-- *fill out registration form*
+- *fill out form*
 - Click **Sign Up**
 - Choose **Posit Cloud** ![](images/posit-cloud.png){ height=30 }
 - *verify email in your inbox*  
@@ -350,9 +350,11 @@ countdown(minutes = 8, seconds = 0)
 
 - I will do a short demo (~4 min) about creating and updating a Quarto slide deck in RStudio Cloud. You do **not** need to follow along. 
 
-- Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves. 
+- Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves (for about 15 min). 
 
 - Instructions are on the next slides
+
+- Poll - who has used R or RStudio before (even just a little bit)? Yes | No
 
 ## Demo 1
 
@@ -362,22 +364,22 @@ countdown(minutes = 8, seconds = 0)
 
 ## Demo 2
 
-- Choose:	File > New... > Quarto Presentation
+- Choose:	File > New File > Quarto Presentation...
 
 ![](images/file-new.png){ width="400" }
 	
 - give it a title, e.g. "Presentation"
 	
-- click Create
+- click **Create**
 
-- this is your Presentation
+- this is your presentation
 
 ![](images/presentation.png){ width="600" }
 
 
 ## Demo 3
 
-- We are in visual mode - you can type in and see changes in real time. 
+- We are in **Visual** mode - you can type in and see changes in real time. 
 
 - Slide list is on the right. 
 
@@ -385,7 +387,7 @@ countdown(minutes = 8, seconds = 0)
 
 - Set it to **Header 2** - you will see it appear in the list. 
 
-- Can do visual mode or source mode.
+- Can do **Visual** mode or **Source** mode.
 
 ![](images/source-visual.png){ height=30 }
 
@@ -424,11 +426,11 @@ countdown(minutes = 8, seconds = 0)
 
 - You can do this on RStudio Cloud or your own copy of RStudio
 
-- You will need to download and install Quarto CLI:
+  - You will need to download and install Quarto CLI:
 
   - [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
 	
-- Can also run in VS Code, Jupyter, Neovim or Text Editor
+  - Can also run in VS Code, Jupyter, Neovim or Text Editor
 
 
 ```{r}
