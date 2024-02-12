@@ -235,28 +235,327 @@ fig-align="center"}
 
 ## About Quarto
 
-::: {.incremental}
-- [Quarto](https://quarto.org/) is a new, open-source, scientific and technical publishing system
-- **Publish reproducible** presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.
-- **Consistent implementation** of features across outputs: tabsets, code-folding, syntax highlighting, etc.
-- **Beginner-friendly** with helpful guardrails for new learners, incl. YAML completion, informative syntax errors, etc.
-- **Multi-language** support for R, Python, Julia, Observable and more functions via Jupyter
-- Quarto extends [RMarkdown](https://rmarkdown.rstudio.com/) and shares similarities with [Juypter Notebooks](https://jupyter.org/).
-- Support and community
-
+::: incremental
+-   [Quarto](https://quarto.org/) is a new, open-source, scientific and
+    technical publishing system
+-  Combine text and code to produce formatted documents
+-   Publish reproducible and dynamic presentations, dashboards, websites, blogs, and books
+    in HTML, PDF, MS Word, etc.
+-   Multi-language support for R, Python, Julia, and more
+-   Quarto extends [RMarkdown](https://rmarkdown.rstudio.com/) and
+    shares similarities with [Juypter Notebooks](https://jupyter.org/).
 :::
 
 ![[Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_3840.png?h=783eba914284e5adfb9feadcf4ba5f1e){width=70%}
 
-## Features of Quarto presentations
+## Formats
 
-```{=html}
-<iframe width="100%" height="80%" src="https://quarto.org/docs/presentations/revealjs/demo/" title="Quarto Revealjs Demo"></iframe>
+::: incremental
+- **Documents**: HTML, PDF, MS Word, Open Office, ePub
+- **Presentations**: Revealjs, PowerPoint, 
+- **Wikis**: MediaWiki, JiraWiki, ...
+- Many templates exist for academic documents: [quarto-journals](https://github.com/quarto-journals/)
+- And much more: Jupyter, RTF, InDesign, ...
+:::
+
+
+::: columns
+::: {.column width="30%"}
+::: {.fragment}
+![[taken from quarto-journals](https://github.com/quarto-journals/)](figures/journal.png)
+:::
+:::
+::: {.column width="30%"}
+::: {.fragment}
+![[taken from quarto gallery](https://quarto.org/docs/gallery/)](figures/presentations-penguins-story.png)
+:::
+:::
+::: {.column width="30%"}
+::: {.fragment}
+![[taken from quarto gallery](https://quarto.org/docs/gallery/)](figures/books-mlr3book.png)
+:::
+:::
+:::
+
+
+
+## How does Quarto work?
+
+
+![taken from [What is Quarto - A Quick Intro FAQ](https://github.com/jansim/tea-talk-quarto/tree/main)](figures/quarto.png)
+
+## .qmd
+
+![[qmd file](https://quarto.org/docs/get-started/hello/rstudio.html)](figures/rstudio-hello.png)
+
+## .ipynb
+
+![[jupyter notebook](https://quarto.org/docs/get-started/hello/jupyter.html)](figures/jupyter-quarto-preview.png)
+
+## Tools
+::: columns
+::: {.column width="20%"}
+![](figures/jupyter.svg.png)
+![](figures/vsc.svg.png)
+![](figures/rs.svg.png)
+:::
+::: {.column width="70%"}
+::: {.fragment}
+![](figures/text-editor-quarto-preview.png)
+````bash
+$ quarto render hello.qmd --to doxc
+````
+:::
+:::
+:::
+
+
+
+
+## A .qmd (and .rmd) file
+
+
+````{.markdown}
+---
+title: "My document"
+format: html
+---
+. . .
+# Introduction
+
+*Hello Quarto!*
+
+```{{r}}
+summary(cars)
+```
+````
+
+## Rendered Output
+
+![](figures/rendering-output.png)
+
+
+## YAML header
+::: columns
+::: {.column width="50%"}
+
+````{.markdown code-line-numbers="1-4|6-10|11-13|14-17|19"}
+---
+title: "My document"
+author: John Doe
+date: today
+
+format:
+  html:
+    toc: true
+engine: knitr
+
+execute:
+  echo: false
+
+params:
+  year: 2023
+  country: "Germany"
+  alpha: 0.05
+
+# bibliography: references.bib
+---
+````
+:::
+::: {.column width="50%"}
+Rich set of rendering options for Pandoc, Quarto and Knitr
+:::
+:::
+
+## Markdown text
+
+
+| Syntax |  Output       |
+|------------------|-----------------------|
+| `*Italic*`       | *Italic*              |
+| `**Bold**`       | **Bold**              |
+| `~~strikethrough~~`     | ~~strikethrough~~    |
+| `[Link](url)`    | [Link](https://example.com) |
+| `i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \Psi + V(\mathbf{r},t) \Psi` | $i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \Psi + V(\mathbf{r},t) \Psi$|
+
+
+
+## Code chunks
+
+
+```{r, echo = TRUE}
+data(iris)
+
+plot(iris$Sepal.Length, iris$Sepal.Width, 
+     main = "Scatter Plot of Sepal Length vs Sepal Width",
+     xlab = "Sepal Length (cm)",
+     ylab = "Sepal Width (cm)",
+     pch = 16, col = iris$Species)
+
 ```
 
-::: footer
-taken from this [Quarto demo presentation](https://quarto.org/docs/presentations/revealjs/demo/) ([Source](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd))
+## Code chunks
+
+::: {.fragment}
+````{.markdown}
+```{{r}}
+#| label: "iris-plot"
+#| echo: TRUE
+#| fig-format: svg
+#| cache: TRUEs
+
+data(iris)
+
+plot(iris$Sepal.Length, iris$Sepal.Width, 
+     main = "Scatter Plot of Sepal Length vs Sepal Width",
+     xlab = "Sepal Length (cm)",
+     ylab = "Sepal Width (cm)",
+     pch = 16, col = iris$Species)
+
+```
+````
+defaults to *knitr* engine (you can override the engine with `engine: jupyter`)
 :::
+
+::: {.fragment}
+
+````{.markdown}
+```{{python}}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+````
+
+defaults to *jupyter* engine
+:::
+
+::: {.fragment}
+You can use Python and R code together using the `reticulate` package
+:::
+
+## Quarto Showcase
+
+
+:::: columns
+::: {.column width="30%"}
+
+**Fragments**
+
+::: {.fragment}
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: {.fragment .fade-in-then-out}
+Fade in, then out
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+
+:::
+
+::: {.column width="30%"}
+::: {.panel-tabset}
+### Tab
+Hello...
+
+### Set
+...World"
+:::
+:::
+
+::: {.column width="30%"}
+**Interactivity**
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng=11.576124, lat=48.137154, popup="Munich")
+```
+:::
+
+::::
+
+## Quarto Showcase
+
+```{ojs}
+//| panel: input
+viewof bill_length_min = Inputs.range(
+  [32, 50], 
+  {value: 35, step: 1, label: "Bill length (min):"}
+)
+viewof islands = Inputs.checkbox(
+  ["Torgersen", "Biscoe", "Dream"], 
+  { value: ["Torgersen", "Biscoe"], 
+    label: "Islands:"
+  }
+)
+```
+
+::: {.panel-tabset}
+
+## Plot
+
+```{ojs}
+Plot.rectY(filtered, 
+  Plot.binX(
+    {y: "count"}, 
+    {x: "body_mass_g", fill: "species", thresholds: 20}
+  ))
+  .plot({
+    facet: {
+      data: filtered,
+      x: "sex",
+      y: "species",
+      marginRight: 80
+    },
+    marks: [
+      Plot.frame(),
+    ]
+  }
+)
+```
+
+## Data
+
+```{ojs}
+Inputs.table(filtered)
+```
+
+:::
+
+```{ojs}
+data = FileAttachment("palmer-penguins.csv").csv({ typed: true })
+```
+
+```{ojs}
+filtered = data.filter(function(penguin) {
+  return bill_length_min < penguin.bill_length_mm &&
+         islands.includes(penguin.island);
+})
+```
 
 <!-- End: Quarto Intro & Syntax - UNAI -->
 
@@ -346,18 +645,18 @@ countdown(minutes = 8, seconds = 0)
 
 ## Thank you! :pray:
 
-:::: {.columns}
+::: columns
 ::: {.column width="30%"}
-
 ![](https://avatars.githubusercontent.com/u/46314469?v=4)
 
 #### Esther Plomp
 
-{{< fa envelope >}} [e.plomp@tudelft.nl](mailto:e.plomp@tudelft.nl)<br>
-{{< fa home-user >}} [estherplomp.github.io](https://estherplomp.github.io/)<br>
+{{< fa envelope >}} [e.plomp\@tudelft.nl](mailto:e.plomp@tudelft.nl)<br>
+{{< fa home-user >}}
+[estherplomp.github.io](https://estherplomp.github.io/)<br>
 {{< fa brands github >}} [GitHub](https://github.com/EstherPlomp)<br>
-{{< fa brands mastodon >}} [Mastodon](https://scholar.social/@toothFAIRy)
-
+{{< fa brands mastodon >}}
+[Mastodon](https://scholar.social/@toothFAIRy)
 :::
 
 ::: {.column width="30%"}
@@ -365,29 +664,45 @@ countdown(minutes = 8, seconds = 0)
 
 #### Lennart Wittkuhn
 
-{{< fa envelope >}} [lennart.wittkuhn@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)<br>
-{{< fa home-user >}} [lennartwittkuhn.com](https://lennartwittkuhn.com/)<br>
+{{< fa envelope >}}
+[lennart.wittkuhn\@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)<br>
+{{< fa home-user >}}
+[lennartwittkuhn.com](https://lennartwittkuhn.com/)<br>
 {{< fa brands github >}} [GitHub](https://github.com/lnnrtwttkhn)<br>
-{{< fa brands mastodon >}} [Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
+{{< fa brands mastodon >}}
+[Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
 :::
 
 ::: {.column width="40%"}
-{{< fa image >}} **Images:** [Scriberia with The Turing Way community](https://doi.org/10.5281/zenodo.3332807) (License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+{{< fa image >}} **Images:** [Scriberia with The Turing Way
+community](https://doi.org/10.5281/zenodo.3332807) (License: [CC BY
+4.0](https://creativecommons.org/licenses/by/4.0/))
 
-:computer: **Slides:** Slides are publicly available at [lennartwittkuhn.com/dra-fair-teaching](https://lennartwittkuhn.com/ddlitlab-presentation/)
+:computer: **Slides:** Slides are publicly available at
+[lennartwittkuhn.com/dra-fair-teaching](https://lennartwittkuhn.com/ddlitlab-presentation/)
 
-:package: **Software:** Reproducible slides build with [Quarto](https://quarto.org/) and deployed to [GitHub Pages](https://pages.github.com/) using [GitHub Actions](https://github.com/features/actions) (details in the [Quarto docs](https://quarto.org/docs/publishing/github-pages.html))
+:package: **Software:** Reproducible slides build with
+[Quarto](https://quarto.org/) and deployed to [GitHub
+Pages](https://pages.github.com/) using [GitHub
+Actions](https://github.com/features/actions) (details in the [Quarto
+docs](https://quarto.org/docs/publishing/github-pages.html))
 
-{{< fa brands github >}} **Source:** Source code is available at [github.com/lnnrtwttkhn/dra-fair-teaching](https://github.com/lnnrtwttkhn/dra-fair-teaching)
+{{< fa brands github >}} **Source:** Source code is available at
+[github.com/lnnrtwttkhn/dra-fair-teaching](https://github.com/lnnrtwttkhn/dra-fair-teaching)
 
-:trackball: **DOI:** [10.5281/zenodo.8296951 ](https://zenodo.org/badge/latestdoi/682015737) (generated using GitHub + [Zenodo](https://zenodo.org/), see [GitHub docs](https://guides.github.com/activities/citable-code/))
+:trackball: **DOI:**
+[10.5281/zenodo.8296951](https://zenodo.org/badge/latestdoi/682015737)
+(generated using GitHub + [Zenodo](https://zenodo.org/), see [GitHub
+docs](https://guides.github.com/activities/citable-code/))
 
-{{< fa scale-balanced >}} **License:** Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+{{< fa scale-balanced >}} **License:** Creative Commons Attribution 4.0
+International ([CC BY
+4.0](https://creativecommons.org/licenses/by/4.0/))
 
-:speech_balloon: **Contact:** We welcome any feedback via [email](mailto:lennart.wittkuhn@uni-hamburg.de?cc=e.plomp@tudelft.nl) or [GitHub issues](https://github.com/lnnrtwttkhn/dra-fair-teaching/issues).
-Thank you!
+:speech_balloon: **Contact:** We welcome any feedback via
+[email](mailto:lennart.wittkuhn@uni-hamburg.de?cc=e.plomp@tudelft.nl) or
+[GitHub
+issues](https://github.com/lnnrtwttkhn/dra-fair-teaching/issues). Thank
+you!
 :::
-
-::::
-
-
+:::
