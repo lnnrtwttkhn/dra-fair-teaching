@@ -1,5 +1,5 @@
 ---
-title: "Reproducible and FAIR Teaching Materials"
+title: "How to use Quarto to create Open & Reproducible presentations"
 subtitle: |
   Digital Research Academy Train the Trainer program
 
@@ -7,31 +7,41 @@ subtitle: |
   [{{< fa brands internet-explorer >}}Slides](https://lennartwittkuhn.com/dra-fair-teaching/)
 
   [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-  [![DOI](https://zenodo.org/badge/682015737.svg)](https://zenodo.org/badge/latestdoi/682015737)
+  [![DOI](https://zenodo.org/badge/)](https://zenodo.org/badge/latestdoi/)
 authors:
-  - id: plomp
+  - id: bearman
     name:
-      given: Esther
-      family: Plomp
-      literal: Esther Plomp
-    url: https://estherplomp.github.io/
-    email: e.plomp@tudelft.nl
-    orcid: 0000-0003-3625-1357
+      given: Nick
+      family: Bearman
+      literal: Nick Bearman
+    url: https://nickbearman.me.uk
+    email: nick@nickbearman.com
+    orcid: 0000-0002-8396-4061
     attributes:
       corresponding: boolean
       equal-contributor: true
-  - id: wittkuhn
+  - id: fischer abaigar    
     name:
-      given: Lennart
-      family: Wittkuhn
-      literal: Lennart Wittkuhn
-    url: https://lennartwittkuhn.com/
-    email: lennart.wittkuhn@uni-hamburg.de
-    orcid: 0000-0003-2966-6888
+      given: Unai
+      family: Fischer Abaigar
+      literal: Unai Fischer Abaigar
+    email: Unai.FischerAbaigar@stat.uni-muenchen.de
+    orcid: 0000-0003-4893-2547
     attributes:
       corresponding: boolean
       equal-contributor: true
-date: "2023-08-29"
+  - id: simson
+    name:
+      given: Jan
+      family: Simson
+      literal: Jan Simson
+    url: https://simson.io
+    email: hi@simson.io
+    orcid: 0000-0002-9406-7761
+    attributes:
+      corresponding: boolean
+      equal-contributor: true
+date: "2024-02-13"
 date-format: long
 from: markdown+emoji
 format:
@@ -50,69 +60,75 @@ format:
 
 <!-- Begin: Intro (to FAIR) - NICK -->
 
-## Overview
+## Outline
 
 ::: {.fragment}
 
-### Outline
-
-- Definitions (FAIR/Reproducibility) - Esther
-- Introduction to tools (Quarto and GitHub) - Lennart
-- If there is time: Demo?
+- Summarise FAIR principles and reproducible research (Nick)
+- Talk about Quarto, one tool in your toolkit (Unai)
+- Make a presentation in Quarto (Nick & you)
+- Compare PowerPoint and Quarto (Jan)
+- Demo creating and updating slides in realtime using GitHub Actions (Jan)
+- Questions (you)
 
 :::
+
+
+
+## Our Target Audience
+
+- Familiar with FAIR principles and reproducible research 
+- Not familiar with doing it in practice
+- *Preaching to the choir*
 
 ::: {.fragment}
 
-### Learning objectives ^[thanks to Digital Research Academy didactics lesson by Julia Pauquet :pray:]
+### Learning objectives 
 
-- You can share your teaching materials in accordance with FAIR principles
-- You can develop reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)
+- You can create reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)
+- You will do some of this today, and know where to go to develop your skills
 
 :::
 
-## What is FAIR?
+## What are FAIR Principles?
 
 ::: columns
-::: {.column width="50%"}
-::: {.fragment}
+:::: {.column width="50%"}
+
 
 **Findable**
 
-- Descriptive metadata and persistent identifier
+- Descriptive metadata and persistent identifier (DOI)
 
 **Accessible**
 
-- Data could be openly available OR authentication and authorisation procedures are necessary
+- Data could be openly available OR access via authentication and if needed
 
 **Interoperable**
 
-- Data needs to be integrated with other data and interoperate with applications or workflows
+- Data needs to be integrated with other data and interoperate with applications or workflows (Open formats)
 
 **Reusable**
 
-- Documentation and license
+- Documentation and license (Open license - e.g. Creative Commons)
 
-:::
-:::
 
-::: {.column width="50%"}
-::: {.fragment}
+::::
+
+:::: {.column width="50%"}
+
 
 ![[by Scriberia for The Turing Way community (CC-BY
 4.0)](https://zenodo.org/record/3678226/files/FAIRPrinciples.jpg?download=1)](https://zenodo.org/record/3678226/files/FAIRPrinciples.jpg?download=1){width="80%"
 fig-align="center"}
 
-:::
-:::
+
+::::
+
 :::
 
-# How does FAIR apply to teaching materials?
+## How does FAIR apply to teaching materials?
 
-Teaching materials can be considered as similar/equal to research outputs.
-FAIR principles also apply!
-
-## FAIR teaching materials?
 ::: columns
 ::: {.column width="42%"}
 ::: {.fragment}
@@ -120,13 +136,8 @@ FAIR principles also apply!
 #### Findable/Accessible
 
 - Share your slides/materials on a data repository to receive a DOI and ensure long term preservation
-  - [Zenodo](https://zenodo.org/) (indexed, DOI, preservation)
-  - [OSF](https://osf.io/) (DOI?, forkable)
 - Share your materials via a journal article
-  - [Taking the TU Delft Carpentries Workshops Online](https://doi.org/10.7191/jeslib.2022.1221 (2022))
 - Share your materials in a training material registry
-  - [TesS](https://tess.elixir-europe.org/) (ELIXIR)
-  - [OERcommons](https://oercommons.org/)
 
 :::
 :::
@@ -136,13 +147,9 @@ FAIR principles also apply!
 
 #### Interoperable
 
-- Use commonly used formats (powerpoint) or open formats such as markdown documents
-  - Pdf is open but difficult to reuse!
+- Use commonly used formats (PowerPoint / Word) or open formats such as Markdown or Quarto documents (PDF)
 - Use common terminology
-  - Instructor/Helpers for Carpentry workshops
 - Integrate with other resources where possible
-  - Citations
-  - Reuse of slides
 
 :::
 
@@ -151,26 +158,12 @@ FAIR principles also apply!
 #### Reusable
 
 - Add documentation
-  - Information sheets
 - Add metadata
-  - learning objectives!, required resources, structure
 - Share under an Open License such as CC-BY
-  - For slides/data: [Creative Commons Licenses](https://creativecommons.org/licenses/)
-  - For software/code: [Choose a License](https://choosealicense.com/)
 
 :::
 :::
 :::
-
-## Ten simple rules for making training materials FAIR
-
-[https://doi.org/10.1371/journal.pcbi.1007854](https://doi.org/10.1371/journal.pcbi.1007854)
-
-![[Illustration for paper "Ten simple rules for making training materials FAIR" (CC-BY
-4.0)](https://zenodo.org/record/3593258/files/10%20simple%20rules%20for%20making%20training%20materials%20FAIR.jpg?download=1)](https://zenodo.org/record/3593258/files/10%20simple%20rules%20for%20making%20training%20materials%20FAIR.jpg?download=1){width="50%"
-fig-align="center"}
-
-# "Reproducible and FAIR Teaching Materials"
 
 ## What is Reproducibility?
 
@@ -186,16 +179,19 @@ fig-align="center"}
 
 Comes close to the Interoperability and Reusable principles:
 
-- Integrating materials
+- Integrating materials (minimise duplication)
 - Formatting
 - Software/code
 - Similar learning goals/objectives and outcomes
 
 ::: fragment
 
-**Practice what you preach!**
+### Practice what you preach!
 
 By setting up your teaching materials in a reproducible manner, you demonstrate the value of reproducibility directly
+
+- Useful for others
+- Useful for future you when you teach this course again
 
 :::
 
@@ -203,7 +199,6 @@ By setting up your teaching materials in a reproducible manner, you demonstrate 
 
 ::: columns
 ::: {.column width="50%"}
-::: {.fragment}
 
 - Information sheets saves time in sharing information
 - Clear communication (or you can update the information!)
@@ -213,19 +208,66 @@ By setting up your teaching materials in a reproducible manner, you demonstrate 
 - Provides you and collaborators with credit (visibility, DOI, citations)
 
 :::
-:::
 
 ::: {.column width="50%"}
-::: {.fragment}
 
 ![[by Scriberia for The Turing Way community (CC-BY
 4.0)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1){width="80%"
 fig-align="center"}
-:::
+
 :::
 :::
 
-# Questions about FAIR/Reproducible?
+## FAIR and reproducible training materials are beneficial to us!
+
+::: columns
+
+- FAIR and reproducible training materials are beneficial to Nick, Jan and Unai :grinning:
+- *We used the [Reproducible and FAIR Teaching Materials](https://osf.io/gj6hd) slides from the Aug 2023 Train the Trainer programme*
+- **Thank you** very much to Esther Plomp and Lennart Wittkuhn :pray: whose [Quarto](https://github.com/jansim/dra-reproducible-materials) slides we used and developed!
+
+::: {.column width="30%"}
+
+![](https://avatars.githubusercontent.com/u/46314469?v=4)
+
+#### Esther Plomp
+
+{{< fa envelope >}} [e.plomp@tudelft.nl](mailto:e.plomp@tudelft.nl)<br>
+{{< fa home-user >}} [estherplomp.github.io](https://estherplomp.github.io/)<br>
+{{< fa brands github >}} [GitHub](https://github.com/EstherPlomp)<br>
+{{< fa brands mastodon >}} [Mastodon](https://scholar.social/@toothFAIRy)
+
+:::
+
+::: {.column width="30%"}
+![](https://avatars.githubusercontent.com/u/42233065?v=4)
+
+#### Lennart Wittkuhn
+
+{{< fa envelope >}} [lennart.wittkuhn@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)<br>
+{{< fa home-user >}} [lennartwittkuhn.com](https://lennartwittkuhn.com/)<br>
+{{< fa brands github >}} [GitHub](https://github.com/lnnrtwttkhn)<br>
+{{< fa brands mastodon >}} [Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
+
+:::
+::: {.column width="40%"}
+
+![[by Scriberia for The Turing Way community (CC-BY
+4.0)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1){width="80%"
+fig-align="center"}
+
+:::
+:::
+
+## Outline
+
+- ~~Summarise FAIR principles and reproducible research (Nick)~~
+- Talk about Quarto, one tool in your toolkit (Unai)
+- *break*
+- Show you how to make a presentation in Quarto (Nick)
+- Compare PowerPoint and Quarto (Jan)
+- Demo creating and updating slides in realtime using GitHub Actions (Jan)
+- Questions (you)
 
 <!-- End: Intro (to FAIR) - NICK -->
 
@@ -559,16 +601,143 @@ filtered = data.filter(function(penguin) {
 
 <!-- End: Quarto Intro & Syntax - UNAI -->
 
-<!-- Start: Rstudio.cloud Practical (incl. Singup + Break) - NICK -->
+<!-- Start: Rstudio.cloud Practical (incl. Signup + Break) - NICK -->
 
-# Break
+## Outline
+
+- ~~Summarise FAIR principles and reproducible research (Nick)~~
+- ~~Talk about Quarto, one tool in your toolkit (Unai)~~
+- *break*
+- Show you how to make a presentation in Quarto (Nick)
+- Compare PowerPoint and Quarto (Jan)
+- Demo creating and updating slides in realtime using GitHub Actions (Jan)
+- Questions (you)
+
+# Posit.cloud
+
+- We will be using Posit.cloud (Rstudio.cloud) after the break
+- If you don't have an account, please set one up in the break
+- I will be around if you have questions
+
+# During the Break:
+
+- Go to [https://login.posit.cloud/](https://login.posit.cloud/)
+- Click **Sign Up** ![](images/sign-up.png){ height=30 }
+- *fill out form*
+- Click **Sign Up**
+- Choose **Posit Cloud** ![](images/posit-cloud.png){ height=30 }
+- *verify email in your inbox*  
+
+![](images/posit-cloud-verify-email.png){ height=200 }
+
+- click **Continue**
+
+- Click **New Project -> New RStudio Project** 
+
+- It should look like the image in the top right!
+
+![](images/new-rstudio-project.png){.absolute bottom="0" left="450" width="200"}
+
+![](images/rstudio-window.png){.absolute top="0" right="0" width="600"}
 
 ```{r}
 library(countdown)
 countdown(minutes = 8, seconds = 0)
 ```
 
-<!-- End: Rstudio.cloud Practical (incl. Singup + Break) - NICK -->
+## Creating a Quarto slidedeck
+
+- I will do a short demo (~4 min) about creating and updating a Quarto slide deck in RStudio Cloud. You do **not** need to follow along. 
+
+- Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves (for about 15 min). 
+
+- Instructions are on the next slides
+
+- Poll - who has used R or RStudio before (even just a little bit)? Yes | No
+
+## Demo 1
+
+- This is your RStudio window:
+
+![](images/rstudio-window.png)
+
+## Demo 2
+
+- Choose:	File > New File > Quarto Presentation...
+
+![](images/file-new.png){ width="400" }
+	
+- give it a title, e.g. "Presentation"
+	
+- click **Create**
+
+- this is your presentation
+
+![](images/presentation.png){ width="600" }
+
+
+## Demo 3
+
+- We are in **Visual** mode - you can type in and see changes in real time. 
+
+- Slide list is on the right. 
+
+- To add a slide, type in some text. 
+
+- Set it to **Header 2** - you will see it appear in the list. 
+
+- Can do **Visual** mode or **Source** mode.
+
+![](images/source-visual.png){ height=30 }
+
+- You can make changes in either and both will update. 
+
+![](images/source.png)
+
+## Demo 4
+
+- To see the slides we need to **Render**
+
+- This converts the Quarto code to slides you can look and and share (in HTML, you can also export as PDF). 
+
+- Before we do this, we have an issue:
+
+![](images/rmarkdown.png){ height=30 }
+
+- Click **Install** to install the library. 
+
+- Then click ![](images/redner.png){ height=30 }
+
+- Slides will open in a new window. 
+
+## Now try on your own!
+
+- Any questions before we start?
+
+- Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves. You have ~15 min. 
+
+- Try some of the codes Unai introduced
+
+- Check out these links for more ideas:
+
+  - [https://quarto.org/docs/get-started/hello/rstudio.html](https://quarto.org/docs/get-started/hello/rstudio.html)
+	- [https://quarto.org/docs/presentations/](https://quarto.org/docs/presentations/)
+
+- You can do this on RStudio Cloud or your own copy of RStudio
+
+  - You will need to download and install Quarto CLI:
+
+  - [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+	
+  - Can also run in VS Code, Jupyter, Neovim or Text Editor
+
+
+```{r}
+library(countdown)
+countdown(minutes = 15, seconds = 0)
+```
+
+<!-- End: Rstudio.cloud Practical (incl. Signup + Break) - NICK -->
 
 <!-- Start: Comparison + Demo - JAN -->
 

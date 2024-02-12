@@ -6,3 +6,4 @@
 *.html
 /.quarto/
 /_site/
+renv.lock
