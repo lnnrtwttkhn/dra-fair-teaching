@@ -726,18 +726,6 @@
       ],
       "Hash": "671a4d384ae9d32fc47a14e98bfa3dc8"
     },
-    "terra": {
-      "Package": "terra",
-      "Version": "1.7-71",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "R",
-        "Rcpp",
-        "methods"
-      ],
-      "Hash": "e8611881ab70a4fb7a1f629b31e6fcff"
-    },
     "tibble": {
       "Package": "tibble",
       "Version": "3.2.1",
